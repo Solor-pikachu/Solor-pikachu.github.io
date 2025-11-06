@@ -1,62 +1,320 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh" data-theme="light">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0f172a" />
   <title>Shoujin Huang | Curriculum Vitae</title>
-  <meta name="description" content="Shoujin Huang 的个人简历主页" />
-  <link rel="preload" href="cv-llt.pdf" as="document" type="application/pdf" />
+  <meta name="description" content="Shoujin Huang 的个人简历主页（Markdown 渲染 + 文献列表）" />
   <style>
     :root {
-      --bg: #f7f7f9; --fg: #111; --muted: #666; --brand: #0047ff;
+      --bg: #0f172a;            /* header 背景 */
+      --page: #f7f8fb;          /* 页面背景 */
+      --card: #ffffff;          /* 卡片背景 */
+      --border: #e5e7eb;        /* 卡片边框 */
+      --text: #0f172a;          /* 正文文字 */
+      --muted: #64748b;         /* 次要文字 */
+      --brand: #2563eb;         /* 品牌主色 */
+      --accent: #10b981;        /* 强调色 */
     }
+    [data-theme="dark"] {
+      --bg: #0b1220;
+      --page: #0b1220;
+      --card: #0f172a;
+      --border: #1f2937;
+      --text: #e5e7eb;
+      --muted: #94a3b8;
+      --brand: #3b82f6;
+      --accent: #22c55e;
+    }
+
     * { box-sizing: border-box; }
-    body { margin: 0; background: var(--bg); color: var(--fg); font: 15px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans","PingFang SC","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif; }
-    .header { background: #111; color: #fff; }
-    .wrap { max-width: 1200px; margin: 0 auto; padding: 16px; }
-    .title { margin: 0; font-size: 20px; }
-    .links { margin-top: 8px; }
-    .links a { color: #9cc7ff; text-decoration: none; margin-right: 12px; }
+    body { margin: 0; background: var(--page); color: var(--text); font: 15px/1.75 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans","PingFang SC","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif; }
+
+    /* 顶部横幅 */
+    .header { color: #fff; background: linear-gradient(120deg, var(--bg) 0%, #11193b 35%, #0c2450 100%); }
+    .wrap { max-width: none; width: 100%; margin: 0 auto; padding: 18px 28px; }
+    .nav { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+    .title { margin: 0; font-size: 20px; letter-spacing: .2px; }
+    .links { display:flex; gap:12px; align-items:center; }
+    .links a { color: #9cc7ff; text-decoration: none; }
     .links a:hover { color: #fff; text-decoration: underline; }
-    .viewer { width: 100%; height: calc(100vh - 120px); border: none; background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,.08); }
-    .fallback { padding: 24px; color: var(--muted); }
-    .footer { color: var(--muted); font-size: 12px; padding: 12px 16px; }
-  </style>
-  <script>
-    // Adjust viewer height on mobile address bar show/hide
-    function setHeight(){
-      const vh = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-      const viewer = document.querySelector('.viewer');
-      if(viewer){ viewer.style.height = (vh - 120) + 'px'; }
+    .toolbar { display:flex; gap:8px; }
+    .btn { background:#ffffff20; color:#fff; border:1px solid #ffffff40; padding:8px 12px; border-radius:8px; cursor:pointer; }
+    .btn:hover { background:#ffffff30; }
+
+    /* 页面布局 */
+    .grid { display:grid; grid-template-columns: 300px 1fr 1fr; gap: 24px; align-items:start; }
+    @media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }
+
+    .card { background: var(--card); border: 2px solid var(--border); border-radius: 14px; box-shadow: 0 8px 30px rgba(0,0,0,.08); }
+    .card-pad { padding: 18px; }
+
+    /* 侧栏个人卡片 */
+    .sidebar .avatar { width: 160px; height:160px; border-radius: 12px; object-fit: cover; display:block; }
+    .sidebar .name { font-size: 20px; margin: 12px 0 4px; }
+    .sidebar .tag { color: var(--muted); margin: 0 0 12px; }
+    .sidebar .contact { list-style: none; margin: 12px 0 0; padding: 0; display: grid; gap: 8px; }
+    .contact a { color: var(--brand); text-decoration: none; }
+    .contact a:hover { text-decoration: underline; }
+    .contact .label { color: var(--muted); margin-right:6px; }
+    .cta { display:flex; gap:10px; margin-top:12px; }
+    .cta .btn { color: var(--text); background: #fff; border:1px solid var(--border); }
+    [data-theme="dark"] .cta .btn { background: #0f172a; color:#e5e7eb; }
+
+    /* 正文（Markdown 渲染） */
+    .prose h1 { font-size: 26px; margin: 0 0 8px; }
+    .prose h2 { font-size: 20px; border-bottom: 1px solid var(--border); padding-bottom: 6px; margin-top: 18px; }
+    .prose h3 { font-size: 16px; margin-top: 14px; }
+    .prose p { margin: 10px 0; }
+    .prose ul { margin: 8px 0 8px 20px; }
+    .prose blockquote { margin: 12px 0; padding: 12px 14px; background: #10b98110; border-left: 3px solid var(--accent); border-radius: 8px; }
+    .prose img { max-width: 160px; border-radius: 8px; }
+    /* 隐藏正文第一个图片（与侧栏头像避免重复） */
+    .prose > p:first-of-type > img { display: none; }
+
+    /* 文献列表 */
+    .pubs h2 { margin: 0 0 6px; }
+    .bib-date { color: var(--muted); font-size: 12px; }
+    #bibtex_display { font-size: 14px; }
+    #bibtex_display .bibtexentry { margin: 10px 0; }
+    .pub-group { margin-top: 14px; }
+    .pub-group h3 { margin: 8px 0; font-size: 16px; }
+    .count-badge { background: #1112; color: var(--text); border: 1px solid var(--border); border-radius: 999px; padding: 2px 8px; font-size: 12px; }
+    .pub-list { list-style: none; margin: 8px 0 0; padding: 0; display: grid; gap: 10px; }
+    .pub-item { display: grid; grid-template-columns: auto 1fr; gap: 10px; align-items: start; border: 1px solid var(--border); border-radius: 10px; padding: 10px 12px; background: #fff; }
+    [data-theme="dark"] .pub-item { background: #0f172a; }
+    .pub-item .num { color: var(--muted); font-weight: 600; min-width: 28px; text-align: right; padding-right: 4px; }
+    .pub-item .title { font-weight: 600; font-size: 16px; }
+    .pub-item .title a { color: var(--text); text-decoration: none; }
+    .pub-item .title a:hover { text-decoration: underline; }
+    .pub-item .authors { color: var(--text); font-size: 14px; }
+    .pub-item .venue { color: var(--text); font-size: 14px; margin-top: 2px; }
+    .pub-item .links { margin-top: 4px; font-size: 12px; }
+    .pub-item .links a { color: var(--brand); text-decoration: none; margin-right: 10px; }
+
+    /* 页脚 */
+    .footer { color: var(--muted); font-size: 12px; padding: 16px 18px; }
+
+    /* 打印优化 */
+    @media print {
+      .header, .sidebar, .toolbar { display:none !important; }
+      .grid { display:block; }
+      body { background:#fff; }
+      .card { box-shadow:none; border:none; }
     }
-    addEventListener('resize', setHeight);
-    addEventListener('DOMContentLoaded', setHeight);
-  </script>
-  <!-- GitHub Pages friendly: no frameworks or build step required -->
-  <!-- Place this file with cv-llt.pdf at repo root (username.github.io) -->
+  </style>
+  <!-- Markdown renderer -->
+  <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+  <!-- BibTeX parser (JSON, tolerant) -->
+  <script src="https://unpkg.com/bibtex-parse-js@0.0.19/bibtexParse.js"></script>
 </head>
 <body>
-  <header class="header">
-    <div class="wrap">
-      <h1 class="title">Shoujin Huang | Curriculum Vitae</h1>
-      <div class="links">
-        <a href="cv-llt.pdf" download>下载 PDF</a>
-        <a href="cv-llt.pdf" target="_blank" rel="noopener">新窗口打开</a>
-        <a href="https://github.com/Solor-pikachu" target="_blank" rel="noopener">GitHub</a>
+  <!-- 顶部导航移除，根据要求不显示标题、GitHub、BibTeX、打印与主题切换 -->
+
+  <main class="wrap grid">
+    <!-- 侧栏：头像与联系方式 -->
+    <aside class="sidebar card card-pad">
+      <img src="photo.jpg" alt="Shoujin Huang" class="avatar" />
+      <h2 class="name">Shoujin Huang</h2>
+      <p class="tag">Research · Medical Image · Deep Learning</p>
+      <div class="cta">
+        <a class="btn" href="cv-llt.pdf" target="_blank" rel="noopener">PDF 版</a>
+        <a class="btn" href="https://github.com/Solor-pikachu" target="_blank" rel="noopener">GitHub</a>
       </div>
-    </div>
-  </header>
-  <main class="wrap">
-    <object data="cv-llt.pdf" type="application/pdf" class="viewer">
-      <div class="fallback">
-        您的浏览器无法内嵌预览 PDF。
-        可选择 <a href="cv-llt.pdf" download>下载简历</a> 或 <a href="cv-llt.pdf" target="_blank" rel="noopener">新窗口打开</a>。
+      <ul class="contact">
+        <li><span class="label">📧</span><a href="mailto:solor.pikachu@gmail.com">solor.pikachu@gmail.com</a></li>
+        <li><span class="label">📍</span>Shenzhen, Guangdong, China</li>
+        <li><span class="label">📞</span>+86 18718547325</li>
+      </ul>
+    </aside>
+
+    <!-- 主内容：Markdown 渲染 -->
+    <article class="card card-pad prose" id="md"></article>
+
+    <!-- 文献列表（最右侧列，与简历并列） -->
+    <section class="card card-pad pubs">
+      <h2>Publications</h2>
+      <p class="bib-date">Last updated: <span id="bib-date"></span></p>
+      <div class="pub-group">
+        <h3>期刊 · Journal Papers <span id="cnt-articles" class="count-badge"></span></h3>
+        <ul id="list-articles" class="pub-list"></ul>
       </div>
-    </object>
+      <div class="pub-group">
+        <h3>会议 · Conference Papers <span id="cnt-inproc" class="count-badge"></span></h3>
+        <ul id="list-inproc" class="pub-list"></ul>
+      </div>
+    </section>
   </main>
+
   <footer class="footer wrap">
     最后更新：<span id="d"></span> · © Shoujin Huang
-    <script>document.getElementById('d').textContent = new Date().toISOString().slice(0,10);</script>
   </footer>
+
+  <script>
+    // 主题切换保持到 localStorage
+    (function(){
+      const saved = localStorage.getItem('theme');
+      if(saved) document.documentElement.setAttribute('data-theme', saved);
+      window.toggleTheme = function(){
+        const next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+      }
+    })();
+
+    // 渲染 Markdown 简历
+    async function loadMD(){
+      const res = await fetch('cv.md');
+      const text = await res.text();
+      document.getElementById('md').innerHTML = marked.parse(text);
+    }
+
+    // 设置日期
+    function setDates(){
+      const today = new Date().toISOString().slice(0,10);
+      document.getElementById('d').textContent = today;
+      document.getElementById('bib-date').textContent = today;
+    }
+
+    // 渲染 Publications（按期刊、会议分组）
+    async function renderPubs(){
+      try {
+        const [resJ, resC] = await Promise.all([
+          fetch('bib/journal.bib'),
+          fetch('bib/conference.bib')
+        ]);
+        const bibRawJ = await resJ.text();
+        const bibRawC = await resC.text();
+        const parsedJ = bibtexParse.toJSON(cleanBib(bibRawJ)) || [];
+        const parsedC = bibtexParse.toJSON(cleanBib(bibRawC)) || [];
+
+        const pick = (tags, k) => tags?.[k] ?? tags?.[k?.toUpperCase?.()] ?? tags?.[k?.toLowerCase?.()];
+        const toEntry = (e) => {
+          const tags = e.entryTags || {};
+          return {
+            id: e.citationKey || e.ID || pick(tags, 'ID') || '',
+            type: (e.entryType || '').toLowerCase(),
+            title: pick(tags, 'title') || '',
+            author: pick(tags, 'author') || '',
+            journal: pick(tags, 'journal') || '',
+            booktitle: pick(tags, 'booktitle') || '',
+            year: pick(tags, 'year') || '',
+            url: pick(tags, 'url') || '',
+            doi: pick(tags, 'doi') || '',
+            pages: pick(tags, 'pages') || '',
+            publisher: pick(tags, 'publisher') || ''
+          };
+        };
+        const entriesJ = parsedJ.map(toEntry);
+        const entriesC = parsedC.map(toEntry);
+
+        const norm = (s) => (s || '').trim();
+        const stripLatex = (s) => {
+          return (s || '')
+            .replace(/\\textbf\s*\{([^}]*)\}/gi, '$1')
+            .replace(/\\emph\s*\{([^}]*)\}/gi, '$1')
+            .replace(/\\textit\s*\{([^}]*)\}/gi, '$1')
+            .replace(/\\texttt\s*\{([^}]*)\}/gi, '$1')
+            .replace(/[{}]/g, '')
+            .replace(/\\&/g, '&')
+            .replace(/\s+/g, ' ')
+            .trim();
+        };
+        const latex = (s) => stripLatex(norm(s));
+        const yearNum = (y) => {
+          const n = parseInt(latex(y), 10);
+          return Number.isFinite(n) ? n : 0;
+        };
+        const splitAuthors = (a) => latex(a).split(/\s+and\s+/i).filter(Boolean);
+        const normalizeFullName = (name) => {
+          const parts = latex(name).split(',').map(p => p.trim());
+          if(parts.length === 2){
+            const last = parts[0];
+            const first = parts[1];
+            return `${first} ${last}`.replace(/\s+/g,' ').trim();
+          }
+          return latex(name).replace(/\s+/g,' ').trim();
+        };
+        const fmtAuthorsFull = (a) => {
+          const arr = splitAuthors(a).map(normalizeFullName);
+          return arr.join(', ');
+        };
+        const linkFor = (e) => {
+          const doi = latex(e.doi);
+          const url = latex(e.url);
+          if(doi) return `https://doi.org/${doi}`;
+          if(url) return url;
+          return '';
+        };
+        const venueFor = (e) => {
+          if(e.type?.toLowerCase() === 'article') return latex(e.journal) || latex(e.publisher) || '';
+          if(e.type?.toLowerCase() === 'inproceedings' || e.type?.toLowerCase() === 'conference') return latex(e.booktitle) || latex(e.publisher) || '';
+          return latex(e.booktitle) || latex(e.journal) || latex(e.publisher) || '';
+        };
+        const pagesFor = (e) => latex(e.pages);
+
+        // 保持 BibTeX 原始顺序：不再按年份排序
+        const articles = entriesJ; // 保持 journal.bib 的原始顺序
+        const confs = entriesC;    // 保持 conference.bib 的原始顺序
+
+        const renderItem = (e, num) => {
+          const link = linkFor(e);
+          const venue = venueFor(e);
+          const pages = pagesFor(e);
+          const title = latex(e.title);
+          const authors = fmtAuthorsFull(e.author || '');
+          const year = latex(e.year);
+          const doi = latex(e.doi);
+          const extra = [];
+          if(pages) extra.push(pages);
+          if(doi) extra.push(`doi:${doi}`);
+          const extraStr = extra.length ? ` · ${extra.join(' · ')}` : '';
+          const titleHtml = link ? `<a href="${link}" target="_blank" rel="noopener">${title}</a>` : title;
+          const venueName = venue || '';
+          const isJournal = (e.type||'').toLowerCase() === 'article';
+          const venueHtml = venueName ? `${isJournal ? `<strong>${venueName}</strong>` : venueName}` : '';
+          const venueLine = `${venueHtml}${year ? (venueHtml ? ' · ' : '') + year : ''}${extraStr}`;
+          return `<li class="pub-item">
+            <span class="num">${num}</span>
+            <div>
+              <div class="title">${titleHtml}</div>
+              <div class="venue">${venueLine}</div>
+              <div class="authors">${authors}</div>
+            </div>
+          </li>`;
+        };
+
+        const $art = document.getElementById('list-articles');
+        const $conf = document.getElementById('list-inproc');
+        $art.innerHTML = articles.map((e, i) => renderItem(e, i + 1)).join('');
+        $conf.innerHTML = confs.map((e, i) => renderItem(e, i + 1)).join('');
+        document.getElementById('cnt-articles').textContent = articles.length;
+        document.getElementById('cnt-inproc').textContent = confs.length;
+      } catch (err) {
+        console.error('Failed to render publications:', err);
+      }
+    }
+
+    // 解析前清理 BibTeX，移除常见不兼容部分
+    function cleanBib(s){
+      if(!s) return '';
+      return s
+        // 移除以 # 开头的注释行
+        .replace(/^\s*#.*$/gm, '')
+        // 移除 @comment 和 @preamble 区块
+        .replace(/@comment\s*\{[^}]*\}/gmi, '')
+        .replace(/@preamble\s*\{[^}]*\}/gmi, '')
+        // 移除 month 字段以避免解析器严格校验
+        .replace(/^\s*month\s*=\s*[^,}]+,?\s*$/gmi, '')
+        // 规范空行
+        .replace(/\n{3,}/g, '\n\n');
+    }
+
+    // 初始化
+    loadMD().catch(console.error);
+    setDates();
+    renderPubs();
+  </script>
 </body>
 </html>
