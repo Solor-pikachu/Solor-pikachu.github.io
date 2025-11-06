@@ -5,7 +5,7 @@
 - Email: `solor.pikachu@gmail.com`
 - GitHub: https://github.com/Solor-pikachu
 - Citations: 284 · IELTS: 6.0
-- Birth: 2000-12-11 · Nationality: Chinese
+- Birth: 2000-11-11 · Nationality: Chinese
 - Phone: +86 18718547325
 - Location: Shenzhen, Guangdong, China
 

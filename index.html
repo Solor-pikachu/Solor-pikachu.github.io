@@ -44,7 +44,7 @@
     .btn:hover { background:#ffffff30; }
 
     /* 页面布局 */
-    .grid { display:grid; grid-template-columns: 300px 1fr 1fr; gap: 24px; align-items:start; }
+    .grid { display:grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items:start; }
     @media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }
 
     .card { background: var(--card); border: 2px solid var(--border); border-radius: 14px; box-shadow: 0 8px 30px rgba(0,0,0,.08); }
@@ -70,6 +70,9 @@
     .prose ul { margin: 8px 0 8px 20px; }
     .prose blockquote { margin: 12px 0; padding: 12px 14px; background: #10b98110; border-left: 3px solid var(--accent); border-radius: 8px; }
     .prose img { max-width: 160px; border-radius: 8px; }
+    /* 主内容右侧的个人照片（填充右侧空位） */
+    .md-photo { float: right; margin: 0 0 12px 18px; }
+     .md-photo img { width: 220px; height: 220px; border-radius: 12px; object-fit: cover; display: block; }
     /* 隐藏正文第一个图片（与侧栏头像避免重复） */
     .prose > p:first-of-type > img { display: none; }
 
@@ -113,21 +116,7 @@
   <!-- 顶部导航移除，根据要求不显示标题、GitHub、BibTeX、打印与主题切换 -->
 
   <main class="wrap grid">
-    <!-- 侧栏：头像与联系方式 -->
-    <aside class="sidebar card card-pad">
-      <img src="photo.jpg" alt="Shoujin Huang" class="avatar" />
-      <h2 class="name">Shoujin Huang</h2>
-      <p class="tag">Research · Medical Image · Deep Learning</p>
-      <div class="cta">
-        <a class="btn" href="cv-llt.pdf" target="_blank" rel="noopener">PDF 版</a>
-        <a class="btn" href="https://github.com/Solor-pikachu" target="_blank" rel="noopener">GitHub</a>
-      </div>
-      <ul class="contact">
-        <li><span class="label">📧</span><a href="mailto:solor.pikachu@gmail.com">solor.pikachu@gmail.com</a></li>
-        <li><span class="label">📍</span>Shenzhen, Guangdong, China</li>
-        <li><span class="label">📞</span>+86 18718547325</li>
-      </ul>
-    </aside>
+    <!-- 左侧整页栏已按要求移除 -->
 
     <!-- 主内容：Markdown 渲染 -->
     <article class="card card-pad prose" id="md"></article>
@@ -147,9 +136,7 @@
     </section>
   </main>
 
-  <footer class="footer wrap">
-    最后更新：<span id="d"></span> · © Shoujin Huang
-  </footer>
+  <!-- 页脚移除：不再显示“最后更新 · © Shoujin Huang” -->
 
   <script>
     // 主题切换保持到 localStorage
@@ -167,14 +154,17 @@
     async function loadMD(){
       const res = await fetch('cv.md');
       const text = await res.text();
-      document.getElementById('md').innerHTML = marked.parse(text);
+      const photoBlock = '<div class="md-photo"><img src="photo.jpg" alt="Shoujin Huang" /></div>';
+      document.getElementById('md').innerHTML = photoBlock + marked.parse(text);
     }
 
     // 设置日期
     function setDates(){
       const today = new Date().toISOString().slice(0,10);
-      document.getElementById('d').textContent = today;
-      document.getElementById('bib-date').textContent = today;
+      const dEl = document.getElementById('d');
+      if(dEl) dEl.textContent = today;
+      const bEl = document.getElementById('bib-date');
+      if(bEl) bEl.textContent = today;
     }
 
     // 渲染 Publications（按期刊、会议分组）
@@ -236,9 +226,16 @@
           }
           return latex(name).replace(/\s+/g,' ').trim();
         };
+        const cmpKey = (s) => latex(s).toLowerCase().replace(/[^a-z\s]/g, ' ').replace(/\s+/g, ' ').trim();
         const fmtAuthorsFull = (a) => {
           const arr = splitAuthors(a).map(normalizeFullName);
-          return arr.join(', ');
+          return arr.map(n => {
+            if(cmpKey(n) === 'shoujin huang'){
+              const cleaned = n.replace(/\d+/g,'').trim();
+              return `<strong>${cleaned}</strong>`;
+            }
+            return n;
+          }).join(', ');
         };
         const linkFor = (e) => {
           const doi = latex(e.doi);
