@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shoujin Huang | Curriculum Vitae</title>
+  <meta name="description" content="Shoujin Huang 的个人简历主页" />
+  <link rel="preload" href="cv-llt.pdf" as="document" type="application/pdf" />
+  <style>
+    :root {
+      --bg: #f7f7f9; --fg: #111; --muted: #666; --brand: #0047ff;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--fg); font: 15px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans","PingFang SC","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif; }
+    .header { background: #111; color: #fff; }
+    .wrap { max-width: 1200px; margin: 0 auto; padding: 16px; }
+    .title { margin: 0; font-size: 20px; }
+    .links { margin-top: 8px; }
+    .links a { color: #9cc7ff; text-decoration: none; margin-right: 12px; }
+    .links a:hover { color: #fff; text-decoration: underline; }
+    .viewer { width: 100%; height: calc(100vh - 120px); border: none; background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,.08); }
+    .fallback { padding: 24px; color: var(--muted); }
+    .footer { color: var(--muted); font-size: 12px; padding: 12px 16px; }
+  </style>
+  <script>
+    // Adjust viewer height on mobile address bar show/hide
+    function setHeight(){
+      const vh = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+      const viewer = document.querySelector('.viewer');
+      if(viewer){ viewer.style.height = (vh - 120) + 'px'; }
+    }
+    addEventListener('resize', setHeight);
+    addEventListener('DOMContentLoaded', setHeight);
+  </script>
+  <!-- GitHub Pages friendly: no frameworks or build step required -->
+  <!-- Place this file with cv-llt.pdf at repo root (username.github.io) -->
+</head>
+<body>
+  <header class="header">
+    <div class="wrap">
+      <h1 class="title">Shoujin Huang | Curriculum Vitae</h1>
+      <div class="links">
+        <a href="cv-llt.pdf" download>下载 PDF</a>
+        <a href="cv-llt.pdf" target="_blank" rel="noopener">新窗口打开</a>
+        <a href="https://github.com/Solor-pikachu" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </header>
+  <main class="wrap">
+    <object data="cv-llt.pdf" type="application/pdf" class="viewer">
+      <div class="fallback">
+        您的浏览器无法内嵌预览 PDF。
+        可选择 <a href="cv-llt.pdf" download>下载简历</a> 或 <a href="cv-llt.pdf" target="_blank" rel="noopener">新窗口打开</a>。
+      </div>
+    </object>
+  </main>
+  <footer class="footer wrap">
+    最后更新：<span id="d"></span> · © Shoujin Huang
+    <script>document.getElementById('d').textContent = new Date().toISOString().slice(0,10);</script>
+  </footer>
+</body>
+</html>

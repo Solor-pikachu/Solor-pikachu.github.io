@@ -12,11 +12,10 @@
 % \usepackage{ctex}
 % Default biblatex style used for the publication list is APA6. If you wish to use a different style or pass other options to biblatex you can change them here. 
 \bibliographystyle{plain}
-\PassOptionsToPackage{style=authortitle,sorting=ydnt,defernumbers=False, minnames=25, maxnames=26}{biblatex}
+\PassOptionsToPackage{style=authortitle,sorting=ydnt,defernumbers=false, minnames=25, maxnames=26}{biblatex}
 
 % Most commands and style definitions are in settings.sty.
 \usepackage{settings}
-\usepackage{xeCJK}
 
 \usepackage{orcidlink}
 \hypersetup{
@@ -45,7 +44,6 @@ colorlinks=true,
 
 % Change the fonts if you want
 \ifxetexorluatex % If you're using XeLaTeX or LuaLaTeX
-  \usepackage{fontspec} 
   %% You can use \setmainfont etc; I'm just using these font packages here because they provide OpenType fonts for use by XeLaTeX/LuaLaTeX anyway
   \usepackage[p,osf,swashQ]{cochineal}
   \usepackage[medium,bold]{cabin}
@@ -56,6 +54,9 @@ colorlinks=true,
   \usepackage{cabin}
   \usepackage[varqu,varl,scale=0.9]{zi4}
 \fi
+
+% Load xeCJK after font packages to avoid fontspec option clash
+\usepackage{xeCJK}
 
 % Change the page margins if you want
 % \geometry{left=1cm,right=1cm,top=1.5cm,bottom=1.5cm}
