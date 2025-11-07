@@ -255,6 +255,19 @@
         const articles = entriesJ; // 保持 journal.bib 的原始顺序
         const confs = entriesC;    // 保持 conference.bib 的原始顺序
 
+        // 将括号中的会议缩写（如 (NeurIPS 2024)）加粗
+        const boldAbbrevParens = (s) => {
+          return (s || '').replace(/\(([^)]+)\)/g, (m, inside) => {
+            const hasYear = /\b(19|20)\d{2}\b/.test(inside);
+            const upperCount = (inside.match(/[A-Z]/g) || []).length;
+            const hasAlpha = /[A-Za-z]/.test(inside);
+            if ((upperCount >= 2 && hasAlpha) || (hasYear && hasAlpha)) {
+              return `(<strong>${inside}</strong>)`;
+            }
+            return m;
+          });
+        };
+
         const renderItem = (e, num) => {
           const link = linkFor(e);
           const venue = venueFor(e);
@@ -267,16 +280,18 @@
           if(pages) extra.push(pages);
           if(doi) extra.push(`doi:${doi}`);
           const extraStr = extra.length ? ` · ${extra.join(' · ')}` : '';
-          const titleHtml = link ? `<a href="${link}" target="_blank" rel="noopener">${title}</a>` : title;
+          const titleBold = boldAbbrevParens(title);
+          const titleHtml = link ? `<a href="${link}" target="_blank" rel="noopener">${titleBold}</a>` : titleBold;
           const venueName = venue || '';
           const isJournal = (e.type||'').toLowerCase() === 'article';
           const venueHtml = venueName ? `${isJournal ? `<strong>${venueName}</strong>` : venueName}` : '';
           const venueLine = `${venueHtml}${year ? (venueHtml ? ' · ' : '') + year : ''}${extraStr}`;
+          const venueLineBold = boldAbbrevParens(venueLine);
           return `<li class="pub-item">
             <span class="num">${num}</span>
             <div>
               <div class="title">${titleHtml}</div>
-              <div class="venue">${venueLine}</div>
+              <div class="venue">${venueLineBold}</div>
               <div class="authors">${authors}</div>
             </div>
           </li>`;
