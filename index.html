@@ -45,11 +45,13 @@
     .btn:hover { background:#ffffff30; }
 
     /* 页面布局 */
-    .grid { display:grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items:start; }
+    .grid { display:grid; grid-template-columns: 0.82fr 1.18fr; gap: 24px; align-items: stretch; }
     @media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }
 
     .card { background: var(--card); border: 2px solid var(--border); border-radius: 14px; box-shadow: 0 8px 30px rgba(0,0,0,.08); }
     .card-pad { padding: 18px; }
+    /* 让左右卡片在同一行内等高 */
+    .grid > .card { height: 100%; }
 
     /* 侧栏个人卡片 */
     .sidebar .avatar { width: 160px; height:160px; border-radius: 12px; object-fit: cover; display:block; }
