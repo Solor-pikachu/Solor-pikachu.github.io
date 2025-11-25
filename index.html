@@ -6,6 +6,7 @@
   <meta name="theme-color" content="#0f172a" />
   <title>Shoujin Huang | Curriculum Vitae</title>
   <meta name="description" content="Shoujin Huang 的个人简历主页（Markdown 渲染 + 文献列表）" />
+  <link rel="stylesheet" href="style.css" />
   <style>
     :root {
       --bg: #0f172a;            /* header 背景 */
@@ -237,6 +238,13 @@
             return n;
           }).join(', ');
         };
+        // 标题归一化与 poster 文件映射（用于追加【poster】链接）
+        const cmpTitle = (s) => latex(s).toLowerCase().replace(/[^a-z0-9\s]/g, ' ').replace(/\s+/g,' ').trim();
+        const posterByTitle = new Map([
+          [cmpTitle('Noise Level Adaptive Diffusion Model for Robust Reconstruction of Accelerated MRI'), 'poster/poster-Nila.pdf'],
+          [cmpTitle('Accurate Multi-contrast MRI Super-Resolution via a Dual Cross-Attention Transformer Network'), 'poster/poster-DCAMSR.pdf'],
+          [cmpTitle('Self-diffusion for Solving Inverse Problems'), 'poster/poster-SDI.pdf'],
+        ]);
         const linkFor = (e) => {
           const doi = latex(e.doi);
           const url = latex(e.url);
@@ -282,6 +290,9 @@
           const extraStr = extra.length ? ` · ${extra.join(' · ')}` : '';
           const titleBold = boldAbbrevParens(title);
           const titleHtml = link ? `<a href="${link}" target="_blank" rel="noopener">${titleBold}</a>` : titleBold;
+          // 若为指定 poster 的论文标题，则在标题旁追加可点击的【poster】标记
+          const posterFile = posterByTitle.get(cmpTitle(title));
+          const posterHtml = posterFile ? ` <a class="poster-link" href="${posterFile}" target="_blank" rel="noopener">[Poster]</a>` : '';
           const venueName = venue || '';
           const isJournal = (e.type||'').toLowerCase() === 'article';
           const venueHtml = venueName ? `${isJournal ? `<strong>${venueName}</strong>` : venueName}` : '';
@@ -290,7 +301,7 @@
           return `<li class="pub-item">
             <span class="num">${num}</span>
             <div>
-              <div class="title">${titleHtml}</div>
+              <div class="title">${titleHtml}${posterHtml}</div>
               <div class="venue">${venueLineBold}</div>
               <div class="authors">${authors}</div>
             </div>
