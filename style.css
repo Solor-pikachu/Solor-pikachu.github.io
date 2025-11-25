@@ -34,7 +34,8 @@
   color: #fff;
 }
 
-/* Poster 纯文本链接下划线 */
+/* Poster 纯文本链接：蓝色并带下划线 */
 .pub-item .title a.poster-link {
+  color: var(--brand);
   text-decoration: underline;
 }
