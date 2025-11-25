@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Poster Viewer</title>
+  <style>
+    :root {
+      --page: #f7f8fb; --text: #0f172a; --border: #e5e7eb; --brand:#2563eb;
+    }
+    body { margin:0; background: var(--page); color: var(--text); font: 15px/1.75 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Noto Sans", "PingFang SC", "Microsoft YaHei", sans-serif; }
+    .wrap { max-width: 980px; margin: 24px auto; padding: 0 18px; }
+    .topbar { display:flex; align-items:center; justify-content: space-between; margin-bottom: 14px; }
+    .topbar .title { font-size: 18px; font-weight: 600; margin: 0; }
+    .topbar .actions { display:flex; gap:10px; }
+    .btn { display:inline-block; padding:6px 10px; border:1px solid var(--border); border-radius: 8px; background:#fff; color: var(--text); text-decoration:none; }
+    .btn:hover { border-color: var(--brand); color: var(--brand); }
+    .viewer { background:#fff; border: 2px solid var(--border); border-radius: 12px; box-shadow: 0 8px 30px rgba(0,0,0,.08); padding: 12px; }
+    .canvas-box { display:flex; justify-content:center; }
+    canvas { max-width: 100%; height: auto; }
+    .note { color:#64748b; font-size: 12px; margin-top: 10px; }
+  </style>
+  <!-- PDF.js from CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+</head>
+<body>
+  <main class="wrap">
+    <div class="topbar">
+      <h1 class="title" id="poster-title">Poster</h1>
+      <div class="actions">
+        <a class="btn" id="download" target="_blank" rel="noopener">下载 PDF</a>
+        <a class="btn" href="../index.html">返回 Publications</a>
+      </div>
+    </div>
+    <section class="viewer">
+      <div class="canvas-box">
+        <canvas id="poster-canvas"></canvas>
+      </div>
+      
+    </section>
+  </main>
+
+  <script>
+    (function(){
+      const params = new URLSearchParams(location.search);
+      const file = (params.get('file') || '').trim();
+      const allow = ['poster-Nila.pdf','poster-DCAMSR.pdf','poster-SDI.pdf','poster-AID.pdf'];
+      const titles = {
+        'poster-Nila.pdf': 'Noise Level Adaptive Diffusion Model for Robust Reconstruction of Accelerated MRI',
+        'poster-DCAMSR.pdf': 'Accurate Multi-contrast MRI Super-Resolution via a Dual Cross-Attention Transformer Network',
+        'poster-SDI.pdf': 'Self-diffusion for Solving Inverse Problems',
+        'poster-AID.pdf': 'Autoregressive Image Diffusion: Generating Image Sequence and Application in MRI'
+      };
+      if(!allow.includes(file)){
+        document.getElementById('poster-title').textContent = 'Poster Not Found';
+        return;
+      }
+      const url = `./${file}`; // 文件位于 poster/ 目录下
+      document.title = `Poster · ${titles[file] || file}`;
+      document.getElementById('poster-title').textContent = titles[file] || file;
+      const dl = document.getElementById('download');
+      dl.href = url;
+
+      // PDF.js 使用 worker
+      pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+
+      const canvas = document.getElementById('poster-canvas');
+      const ctx = canvas.getContext('2d');
+      let rerenderTimer = null;
+      let currentTask = null;
+      let pdfDoc = null;
+      let firstPage = null;
+
+      function render(){
+        if(!firstPage) return;
+        const dpr = window.devicePixelRatio || 1; // 每次渲染重新获取，适配 Ctrl+滚轮浏览器缩放
+        const containerWidth = document.querySelector('.viewer').clientWidth - 24; // padding 留白
+        const viewport = firstPage.getViewport({ scale: 1 });
+        const scale = containerWidth / viewport.width;
+        const scaled = firstPage.getViewport({ scale });
+        canvas.width = Math.floor(scaled.width * dpr);
+        canvas.height = Math.floor(scaled.height * dpr);
+        canvas.style.width = Math.floor(scaled.width) + 'px';
+        canvas.style.height = Math.floor(scaled.height) + 'px';
+        const transform = [dpr, 0, 0, dpr, 0, 0];
+        const renderContext = { canvasContext: ctx, viewport: scaled, transform };
+        // 若之前有渲染任务，先取消以避免并发错误
+        if(currentTask && currentTask.cancel) {
+          try { currentTask.cancel(); } catch(_){}
+        }
+        currentTask = firstPage.render(renderContext);
+        currentTask.promise.catch(err => {
+          if(err && err.name === 'RenderingCancelledException') return; // 被取消，忽略
+          console.error('Failed to render poster:', err);
+          const noteEl = document.querySelector('.note');
+          if(noteEl) noteEl.textContent = '渲染失败，请尝试下载 PDF 查看。';
+        });
+      }
+
+      function scheduleRender(){
+        clearTimeout(rerenderTimer);
+        rerenderTimer = setTimeout(render, 120);
+      }
+
+      // 加载文档一次并缓存
+      pdfjsLib.getDocument(url).promise
+        .then(doc => { pdfDoc = doc; return doc.getPage(1); })
+        .then(page => { firstPage = page; render(); })
+        .catch(err => {
+          console.error('Failed to init poster:', err);
+          const noteEl = document.querySelector('.note');
+          if(noteEl) noteEl.textContent = '初始化失败，请尝试下载 PDF 查看。';
+        });
+
+      window.addEventListener('resize', scheduleRender);
+      // 兼容 Ctrl+滚轮缩放场景：触发重渲染（防抖）
+      window.addEventListener('wheel', (e) => {
+        if(e.ctrlKey) scheduleRender();
+      }, { passive: true });
+    })();
+  </script>
+</body>
+</html>

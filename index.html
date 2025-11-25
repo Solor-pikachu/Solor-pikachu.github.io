@@ -241,9 +241,10 @@
         // 标题归一化与 poster 文件映射（用于追加【poster】链接）
         const cmpTitle = (s) => latex(s).toLowerCase().replace(/[^a-z0-9\s]/g, ' ').replace(/\s+/g,' ').trim();
         const posterByTitle = new Map([
-          [cmpTitle('Noise Level Adaptive Diffusion Model for Robust Reconstruction of Accelerated MRI'), 'poster/poster-Nila.pdf'],
-          [cmpTitle('Accurate Multi-contrast MRI Super-Resolution via a Dual Cross-Attention Transformer Network'), 'poster/poster-DCAMSR.pdf'],
-          [cmpTitle('Self-diffusion for Solving Inverse Problems'), 'poster/poster-SDI.pdf'],
+          [cmpTitle('Noise Level Adaptive Diffusion Model for Robust Reconstruction of Accelerated MRI'), 'poster/view.html?file=poster-Nila.pdf'],
+          [cmpTitle('Accurate Multi-contrast MRI Super-Resolution via a Dual Cross-Attention Transformer Network'), 'poster/view.html?file=poster-DCAMSR.pdf'],
+          [cmpTitle('Self-diffusion for Solving Inverse Problems'), 'poster/view.html?file=poster-SDI.pdf'],
+          [cmpTitle('Autoregressive Image Diffusion: Generating Image Sequence and Application in MRI'), 'poster/view.html?file=poster-AID.pdf'],
         ]);
         const linkFor = (e) => {
           const doi = latex(e.doi);
