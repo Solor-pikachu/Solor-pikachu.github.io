@@ -39,3 +39,8 @@
   color: var(--brand);
   text-decoration: underline;
 }
+
+/* 简历正文中的 Citations 链接下划线（避免被其他规则覆盖） */
+.prose a.citations-link {
+  text-decoration: underline;
+}
