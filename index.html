@@ -94,6 +94,8 @@
     .pub-item .title { font-weight: 600; font-size: 16px; }
     .pub-item .title a { color: var(--text); text-decoration: none; }
     .pub-item .title a:hover { text-decoration: underline; }
+    .pub-item .title a.poster-link,
+    .pub-item .title a.code-link { color: var(--brand); margin-left: 6px; }
     .pub-item .authors { color: var(--text); font-size: 14px; }
     .pub-item .venue { color: var(--text); font-size: 14px; margin-top: 2px; }
     .pub-item .links { margin-top: 4px; font-size: 12px; }
@@ -195,7 +197,8 @@
             url: pick(tags, 'url') || '',
             doi: pick(tags, 'doi') || '',
             pages: pick(tags, 'pages') || '',
-            publisher: pick(tags, 'publisher') || ''
+            publisher: pick(tags, 'publisher') || '',
+            code: pick(tags, 'code') || ''
           };
         };
         const entriesJ = parsedJ.map(toEntry);
@@ -295,6 +298,9 @@
           // 若为指定 poster 的论文标题，则在标题旁追加可点击的【poster】标记
           const posterFile = posterByTitle.get(cmpTitle(title));
           const posterHtml = posterFile ? ` <a class="poster-link" href="${posterFile}" target="_blank" rel="noopener">[Poster]</a>` : '';
+          // 若 BibTeX 含有 code 字段，则追加【Code】链接
+          const codeLink = latex(e.code || '');
+          const codeHtml = codeLink ? ` <a class="code-link" href="${codeLink}" target="_blank" rel="noopener">[Code]</a>` : '';
           const venueName = venue || '';
           const isJournal = (e.type||'').toLowerCase() === 'article';
           const venueHtml = venueName ? `${isJournal ? `<strong>${venueName}</strong>` : venueName}` : '';
@@ -303,7 +309,7 @@
           return `<li class="pub-item">
             <span class="num">${num}</span>
             <div>
-              <div class="title">${titleHtml}${posterHtml}</div>
+              <div class="title">${titleHtml}${posterHtml}${codeHtml}</div>
               <div class="venue">${venueLineBold}</div>
               <div class="authors">${authors}</div>
             </div>
