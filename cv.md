@@ -55,6 +55,12 @@
   Number: 2023101949412 · Status: Pending · Applicants: Tencent Music Entertainment  
   Inventors (Top3): Shoujin Huang, Xin Nie, Guowei Hong · Application Date: 2023-06-09
 
----
+## Skills
+
+- Languages  
+  Strong reading, writing and speaking competencies for English, Chinese.
+
+- Coding
+  Linux, Python, Latex, Matlab, Pytorch, Tensorflow, Keras, JavaScript, HTML.
 
 <!-- Notes removed as requested -->
