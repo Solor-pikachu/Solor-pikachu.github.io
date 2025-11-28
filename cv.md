@@ -48,11 +48,16 @@
 ## Chinese Patent
 
 - An intelligent elderly health monitoring method, device, terminal and storage medium.  
-  Number: 2022101433404 · Status: Granted · Applicants: Shenzhen Technology University  
-  Inventors (Top3): Shoujin Huang, Junhui Zhu, Tan Zhang · Application Date: 2022-02-16
+  Number: 2022101433404  
+  Status: Granted  
+  Applicants: Shenzhen Technology University  
+  Inventors (Top3): Shoujin Huang, Junhui Zhu, Tan Zhang  
+  Application Date: 2022-02-16
 
 - Video scene recognition method, neural network training method, server and medium.  
-  Number: 2023101949412 · Status: Pending · Applicants: Tencent Music Entertainment  
+  Number: 2023101949412  
+  Status: Pending  
+  Applicants: Tencent Music Entertainment   
   Inventors (Top3): Shoujin Huang, Xin Nie, Guowei Hong · Application Date: 2023-06-09
 
 ## Skills
@@ -60,7 +65,7 @@
 - Languages  
   Strong reading, writing and speaking competencies for English, Chinese.
 
-- Coding
+- Coding  
   Linux, Python, Latex, Matlab, Pytorch, Tensorflow, Keras, JavaScript, HTML.
 
 <!-- Notes removed as requested -->
