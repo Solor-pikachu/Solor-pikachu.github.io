@@ -80,7 +80,8 @@
       <file>cv-llt.bcf</file>
     </requires>
     <requires type="editable">
-      <file>own-bib.bib</file>
+      <file>bib/journal.bib</file>
+      <file>bib/conference.bib</file>
     </requires>
   </external>
 </requests>

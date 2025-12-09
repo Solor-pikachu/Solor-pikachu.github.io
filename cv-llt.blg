@@ -1,18 +1,18 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'cv-llt.blg'
-[137] biber-MSWIN64:340> INFO - === 
-[176] Biber.pm:419> INFO - Reading 'cv-llt.bcf'
-[264] Biber.pm:976> INFO - Using all citekeys in bib section 0
-[276] Biber.pm:4419> INFO - Processing section 0
-[286] Biber.pm:4610> INFO - Looking for bibtex file 'own-bib.bib' for section 0
-[356] bibtex.pm:1713> INFO - LaTeX decoding ...
-[383] bibtex.pm:1519> INFO - Found BibTeX data source 'own-bib.bib'
-[549] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[549] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[551] Biber.pm:4239> INFO - Sorting list 'ydnt/global//global/global' of type 'entry' with template 'ydnt' and locale 'en-US'
-[551] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[579] bbl.pm:660> INFO - Writing 'cv-llt.bbl' with encoding 'UTF-8'
-[611] bbl.pm:763> INFO - Output to cv-llt.bbl
-[611] Biber.pm:131> WARN - Duplicate entry key: 'luo2024autoregressive' in file 'own-bib.bib', skipping ...
-[612] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\SHOUJI~1\AppData\Local\Temp\biber_tmp_CewB\d47b668d4e9abee119c28f333410e92d_616.utf8, line 146, warning: 10 characters of junk seen at toplevel
-[612] Biber.pm:133> INFO - WARNINGS: 2
+[131] biber-MSWIN64:340> INFO - === 
+[186] Biber.pm:419> INFO - Reading 'cv-llt.bcf'
+[300] Biber.pm:976> INFO - Using all citekeys in bib section 0
+[312] Biber.pm:4419> INFO - Processing section 0
+[330] Biber.pm:4610> INFO - Looking for bibtex file 'bib/journal.bib' for section 0
+[395] bibtex.pm:1713> INFO - LaTeX decoding ...
+[411] bibtex.pm:1519> INFO - Found BibTeX data source 'bib/journal.bib'
+[531] Biber.pm:4610> INFO - Looking for bibtex file 'bib/conference.bib' for section 0
+[593] bibtex.pm:1713> INFO - LaTeX decoding ...
+[603] bibtex.pm:1519> INFO - Found BibTeX data source 'bib/conference.bib'
+[689] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[690] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[690] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[690] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[711] bbl.pm:660> INFO - Writing 'cv-llt.bbl' with encoding 'UTF-8'
+[743] bbl.pm:763> INFO - Output to cv-llt.bbl

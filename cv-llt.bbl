@@ -18,7 +18,254 @@
 
 
 \refsection{0}
-  \datalist[entry]{ydnt/global//global/global}
+  \datalist[entry]{none/global//global/global}
+    \entry{HUANG2025103851}{article}{}
+      \name{author}{11}{}{%
+        {{un=1,uniquepart=given,hash=e422b81bd8e9bc42653920f7afcd18ca}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Shoujin},
+           giveni={S\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=36af05e8d1d9c86c73bd9159a2aa01e3}{%
+           family={Luo},
+           familyi={L\bibinitperiod},
+           given={Guanxiong},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=1,uniquepart=given,hash=5ff0c8a7901beb070ee47628a57c200a}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Yunlin},
+           giveni={Y\bibinitperiod},
+           givenun=1}}%
+        {{un=1,uniquepart=given,hash=6a023c15afe9e673b667a53c08892c42}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Yilong},
+           giveni={Y\bibinitperiod},
+           givenun=1}}%
+        {{un=1,uniquepart=given,hash=8d5a1cb743d674b56459a74af300f838}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Yuwan},
+           giveni={Y\bibinitperiod},
+           givenun=1}}%
+        {{un=1,uniquepart=given,hash=ba3d24f674954bd8e944ef10e8f40ef4}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Kexin},
+           giveni={K\bibinitperiod},
+           givenun=1}}%
+        {{un=1,uniquepart=given,hash=18f76466ede69d1e0496c258653e98ca}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Jingzhe},
+           giveni={J\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=f4a76a837dd18ff55753e445c8ce241d}{%
+           family={Guo},
+           familyi={G\bibinitperiod},
+           given={Hua},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=1,uniquepart=given,hash=96fb575ca3e501d621aacb8925f7030e}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Min},
+           giveni={M\bibinitperiod},
+           givenun=1}}%
+        {{un=1,uniquepart=given,hash=85e6dbb0aceb6d656b6c9ef0234156ad}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Lingyan},
+           giveni={L\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=d4bea75e01bbd4b14ee96a0ac32032b5}{%
+           family={Lyu},
+           familyi={L\bibinitperiod},
+           given={Mengye},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c7e2bccd690447e1074d1eb348839678}
+      \strng{fullhash}{c7e2bccd690447e1074d1eb348839678}
+      \strng{bibnamehash}{c7e2bccd690447e1074d1eb348839678}
+      \strng{authorbibnamehash}{c7e2bccd690447e1074d1eb348839678}
+      \strng{authornamehash}{c7e2bccd690447e1074d1eb348839678}
+      \strng{authorfullhash}{c7e2bccd690447e1074d1eb348839678}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1361-8415}
+      \field{journaltitle}{Medical Image Analysis (IF 11.8)}
+      \field{title}{Robust Simultaneous Multislice MRI Reconstruction Using Slice-Wise Learned Generative Diffusion Priors}
+      \field{year}{2025}
+      \true{nocite}
+      \field{pages}{103851}
+      \range{pages}{1}
+      \verb{doi}
+      \verb doi.org/10.1016/j.media.2025.103851
+      \endverb
+    \endentry
+    \entry{huang2024exploring}{article}{}
+      \name{author}{6}{}{%
+        {{un=1,uniquepart=given,hash=e422b81bd8e9bc42653920f7afcd18ca}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Shoujin},
+           giveni={S\bibinitperiod},
+           givenun=1}}%
+        {{un=1,uniquepart=given,hash=9798d48661e7f14d2881b9a48da3bef0}{%
+           family={Deng},
+           familyi={D\bibinitperiod},
+           given={Guoxiong},
+           giveni={G\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=9c3f95b989273c77f0f08b20da1dddd8}{%
+           family={Kang},
+           familyi={K\bibinitperiod},
+           given={Yan},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=2,uniquepart=given,hash=eb7fbed3f8776de1b90974d3aca80614}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Jianzhong},
+           giveni={J\bibinitperiod},
+           givenun=2}}%
+        {{un=2,uniquepart=given,hash=bff6a3005609a584433f086c631a758f}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Jingyu},
+           giveni={J\bibinitperiod},
+           givenun=2}}%
+        {{un=0,uniquepart=base,hash=d4bea75e01bbd4b14ee96a0ac32032b5}{%
+           family={Lyu},
+           familyi={L\bibinitperiod},
+           given={Mengye},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0a0c959e62fbcba634b4e89d2e19b0b5}
+      \strng{fullhash}{0a0c959e62fbcba634b4e89d2e19b0b5}
+      \strng{bibnamehash}{0a0c959e62fbcba634b4e89d2e19b0b5}
+      \strng{authorbibnamehash}{0a0c959e62fbcba634b4e89d2e19b0b5}
+      \strng{authornamehash}{0a0c959e62fbcba634b4e89d2e19b0b5}
+      \strng{authorfullhash}{0a0c959e62fbcba634b4e89d2e19b0b5}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Scientific Reports (IF 3.9)}
+      \field{number}{1}
+      \field{title}{Exploring Deep Learning Strategies for Intervertebral Disc Herniation Detection on Veterinary MRI}
+      \field{volume}{14}
+      \field{year}{2024}
+      \true{nocite}
+      \field{pages}{16705}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1038/s41598-024-67749-5
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/s41598-024-67749-5
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/s41598-024-67749-5
+      \endverb
+    \endentry
+    \entry{lyu_m4raw_2023}{article}{}
+      \name{author}{10}{}{%
+        {{un=0,uniquepart=base,hash=d64e95eee873d3c523abd06827bc55fd}{%
+           family={{Mengye Lyu}},
+           familyi={M\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=2cec8c3b65af52b83626048d6d9ca94c}{%
+           family={Mei},
+           familyi={M\bibinitperiod},
+           given={Lifeng},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=1,uniquepart=given,hash=e422b81bd8e9bc42653920f7afcd18ca}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Shoujin},
+           giveni={S\bibinitperiod},
+           givenun=1}}%
+        {{un=2,uniquepart=given,hash=22df6c53f9566e085e6324cedfd89a91}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Sixing},
+           giveni={S\bibinitperiod},
+           givenun=2}}%
+        {{un=1,uniquepart=given,hash=cf1f0547c288eff0857572dcc12516bb}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Yi},
+           giveni={Y\bibinitperiod},
+           givenun=1}}%
+        {{un=1,uniquepart=given,hash=ba3d24f674954bd8e944ef10e8f40ef4}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Kexin},
+           giveni={K\bibinitperiod},
+           givenun=1}}%
+        {{un=1,uniquepart=given,hash=6a023c15afe9e673b667a53c08892c42}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Yilong},
+           giveni={Y\bibinitperiod},
+           givenun=1}}%
+        {{un=1,uniquepart=given,hash=776f36bf08e28873ee761ef612b8482f}{%
+           family={Dong},
+           familyi={D\bibinitperiod},
+           given={Yu},
+           giveni={Y\bibinitperiod},
+           givenun=1}}%
+        {{un=1,uniquepart=given,hash=85c643c4238ad669fae8ad91dd30984f}{%
+           family={Dong},
+           familyi={D\bibinitperiod},
+           given={Linzheng},
+           giveni={L\bibinitperiod},
+           givenun=1}}%
+        {{un=2,uniquepart=given,hash=c3060919774850852af8a544e14e69a7}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Ed\bibnamedelima X.},
+           giveni={E\bibinitperiod\bibinitdelim X\bibinitperiod},
+           givenun=2}}%
+      }
+      \strng{namehash}{b483cc344d8dc6a4513c47f4efe7829a}
+      \strng{fullhash}{b483cc344d8dc6a4513c47f4efe7829a}
+      \strng{bibnamehash}{b483cc344d8dc6a4513c47f4efe7829a}
+      \strng{authorbibnamehash}{b483cc344d8dc6a4513c47f4efe7829a}
+      \strng{authornamehash}{b483cc344d8dc6a4513c47f4efe7829a}
+      \strng{authorfullhash}{b483cc344d8dc6a4513c47f4efe7829a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2052-4463}
+      \field{journaltitle}{Scientific Data (IF 10.8)}
+      \field{month}{5}
+      \field{number}{1}
+      \field{title}{{M4Raw}: {A} multi-contrast, multi-repetition, multi-channel {MRI} k-space dataset for low-field {MRI} research}
+      \field{volume}{10}
+      \field{year}{2023}
+      \true{nocite}
+      \field{pages}{264}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1038/s41597-023-02181-4
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1038/s41597-023-02181-4
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1038/s41597-023-02181-4
+      \endverb
+    \endentry
     \entry{11121919}{article}{}
       \name{author}{10}{}{%
         {{un=1,uniquepart=given,hash=e491ec4dec805d64ebd39b4d7431f591}{%
@@ -45,9 +292,12 @@
            given={Lingyan},
            giveni={L\bibinitperiod},
            givenun=1}}%
-        {{un=0,uniquepart=base,hash=483bfcdb1c0e2dcbd5c283ed40dccc9e}{%
-           family={\textbf{Shoujin\bibnamedelimb Huang}},
-           familyi={S\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{un=1,uniquepart=given,hash=e422b81bd8e9bc42653920f7afcd18ca}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Shoujin},
+           giveni={S\bibinitperiod},
+           givenun=1}}%
         {{un=0,uniquepart=base,hash=c21e5ce3b3ee19910d13e055f76ad8ff}{%
            family={Zheng},
            familyi={Z\bibinitperiod},
@@ -79,14 +329,14 @@
            giveni={M\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{5eccf918cfeb31c66ec8d6267ebf3b71}
-      \strng{fullhash}{5eccf918cfeb31c66ec8d6267ebf3b71}
-      \strng{bibnamehash}{5eccf918cfeb31c66ec8d6267ebf3b71}
-      \strng{authorbibnamehash}{5eccf918cfeb31c66ec8d6267ebf3b71}
-      \strng{authornamehash}{5eccf918cfeb31c66ec8d6267ebf3b71}
-      \strng{authorfullhash}{5eccf918cfeb31c66ec8d6267ebf3b71}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \strng{namehash}{2ed02ee7f8ed6719cfe19361ed71649c}
+      \strng{fullhash}{2ed02ee7f8ed6719cfe19361ed71649c}
+      \strng{bibnamehash}{2ed02ee7f8ed6719cfe19361ed71649c}
+      \strng{authorbibnamehash}{2ed02ee7f8ed6719cfe19361ed71649c}
+      \strng{authornamehash}{2ed02ee7f8ed6719cfe19361ed71649c}
+      \strng{authorfullhash}{2ed02ee7f8ed6719cfe19361ed71649c}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IEEE Transactions on Medical Imaging}
@@ -100,37 +350,88 @@
       \endverb
       \keyw{Magnetic resonance imaging;Image edge detection;Image reconstruction;Generators;Biomedical imaging;Training data;Training;Unsupervised learning;Signal to noise ratio;Translation;Low Field MRI;Unsupervised Learning;Image Translation;Noise Reduction;Brain Imaging}
     \endentry
-    \entry{luo2024autoregressive}{inproceedings}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=36af05e8d1d9c86c73bd9159a2aa01e3}{%
-           family={Luo},
-           familyi={L\bibinitperiod},
-           given={Guanxiong},
-           giveni={G\bibinitperiod},
+    \entry{hassan2022review}{article}{}
+      \name{author}{9}{}{%
+        {{un=0,uniquepart=base,hash=a0aed2dadfa1682284643afb0cb9f595}{%
+           family={{Haseeb Hassan}},
+           familyi={H\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=3681c8a717fc8e840a8b4a90638b19b8}{%
+           family={Ren},
+           familyi={R\bibinitperiod},
+           given={Zhaoyu},
+           giveni={Z\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=483bfcdb1c0e2dcbd5c283ed40dccc9e}{%
-           family={\textbf{Shoujin\bibnamedelimb Huang}},
-           familyi={S\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{un=1,uniquepart=given,hash=e2ea2a7522c5b4e9de6cc2ad15d1391f}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Huishi},
+           giveni={H\bibinitperiod},
+           givenun=1}}%
+        {{un=1,uniquepart=given,hash=e422b81bd8e9bc42653920f7afcd18ca}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Shoujin},
+           giveni={S\bibinitperiod},
+           givenun=1}}%
+        {{un=1,uniquepart=given,hash=fc63986540b002fd74244549ce74082f}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Dan},
+           giveni={D\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=9061250b34a7ce622f905b0ed98b6fae}{%
+           family={Xiang},
+           familyi={X\bibinitperiod},
+           given={Shaohua},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9c3f95b989273c77f0f08b20da1dddd8}{%
+           family={Kang},
+           familyi={K\bibinitperiod},
+           given={Yan},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=1,uniquepart=given,hash=359136c550ecf4386c4aed04de264171}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Sifan},
+           giveni={S\bibinitperiod},
+           givenun=1}}%
+        {{un=1,uniquepart=given,hash=de2800dbc4cd88500044b1d3bcc9fa25}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Bingding},
+           giveni={B\bibinitperiod},
+           givenun=1}}%
       }
-      \strng{namehash}{05fe77eefdfd9b1750503a29317169f2}
-      \strng{fullhash}{05fe77eefdfd9b1750503a29317169f2}
-      \strng{bibnamehash}{05fe77eefdfd9b1750503a29317169f2}
-      \strng{authorbibnamehash}{05fe77eefdfd9b1750503a29317169f2}
-      \strng{authornamehash}{05fe77eefdfd9b1750503a29317169f2}
-      \strng{authorfullhash}{05fe77eefdfd9b1750503a29317169f2}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{5dedee8deb56ad95fa7e7b181d810f11}
+      \strng{fullhash}{5dedee8deb56ad95fa7e7b181d810f11}
+      \strng{bibnamehash}{5dedee8deb56ad95fa7e7b181d810f11}
+      \strng{authorbibnamehash}{5dedee8deb56ad95fa7e7b181d810f11}
+      \strng{authornamehash}{5dedee8deb56ad95fa7e7b181d810f11}
+      \strng{authorfullhash}{5dedee8deb56ad95fa7e7b181d810f11}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{\textbf{Conference and Workshop on Neural Information Processing Systems (NeurIPS 2025)}}
-      \field{title}{Self-diffusion for Solving Inverse Problems}
-      \field{year}{2024}
+      \field{journaltitle}{Computers in Biology and Medicine (IF 6.9)}
+      \field{title}{Review and classification of AI-enabled COVID-19 CT imaging models based on computer vision tasks}
+      \field{volume}{141}
+      \field{year}{2022}
       \true{nocite}
+      \field{pages}{105123}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.compbiomed.2021.105123
+      \endverb
       \verb{urlraw}
-      \verb https://openreview.net/pdf?id=5g9qls1V7Q
+      \verb https://www.sciencedirect.com/science/article/pii/S0010482521009173
       \endverb
       \verb{url}
-      \verb https://openreview.net/pdf?id=5g9qls1V7Q
+      \verb https://www.sciencedirect.com/science/article/pii/S0010482521009173
       \endverb
     \endentry
     \entry{ma_unleashing_2024}{article}{}
@@ -207,9 +508,12 @@
            given={Yuanke},
            giveni={Y\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=483bfcdb1c0e2dcbd5c283ed40dccc9e}{%
-           family={\textbf{Shoujin\bibnamedelimb Huang}},
-           familyi={S\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{un=1,uniquepart=given,hash=e422b81bd8e9bc42653920f7afcd18ca}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Shoujin},
+           giveni={S\bibinitperiod},
+           givenun=1}}%
         {{un=1,uniquepart=given,hash=735fe5149a53b613f53f3bc198eac59c}{%
            family={Wang},
            familyi={W\bibinitperiod},
@@ -358,18 +662,17 @@
            giveni={B\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{f386d593fedf7c9f6626b6960b07dfed}
-      \strng{fullhash}{8fe6296fa64cb09f002557752db3b855}
-      \strng{bibnamehash}{f386d593fedf7c9f6626b6960b07dfed}
-      \strng{authorbibnamehash}{f386d593fedf7c9f6626b6960b07dfed}
-      \strng{authornamehash}{f386d593fedf7c9f6626b6960b07dfed}
-      \strng{authorfullhash}{8fe6296fa64cb09f002557752db3b855}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \strng{namehash}{edb6be35941b04a93d5acdf43bc045b5}
+      \strng{fullhash}{bd9c0bd02e2454e122e63ecfd730a36b}
+      \strng{bibnamehash}{edb6be35941b04a93d5acdf43bc045b5}
+      \strng{authorbibnamehash}{edb6be35941b04a93d5acdf43bc045b5}
+      \strng{authornamehash}{edb6be35941b04a93d5acdf43bc045b5}
+      \strng{authorfullhash}{bd9c0bd02e2454e122e63ecfd730a36b}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{issn}{2589-7500}
-      \field{journaltitle}{\textbf{The Lancet Digital Health (IF 30.8)}}
+      \field{journaltitle}{The Lancet Digital Health (IF 30.8)}
       \field{number}{11}
       \field{title}{Unleashing the strengths of unlabelled data in deep learning-assisted pan-cancer abdominal organ quantification: the {FLARE22} challenge}
       \field{volume}{6}
@@ -387,34 +690,208 @@
       \verb https://doi.org/10.1016/S2589-7500(24)00154-7
       \endverb
     \endentry
-    \entry{huang2024exploring}{article}{}
-      \name{author}{6}{}{%
-        {{un=0,uniquepart=base,hash=483bfcdb1c0e2dcbd5c283ed40dccc9e}{%
-           family={\textbf{Shoujin\bibnamedelimb Huang}},
-           familyi={S\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
-        {{un=1,uniquepart=given,hash=9798d48661e7f14d2881b9a48da3bef0}{%
-           family={Deng},
-           familyi={D\bibinitperiod},
-           given={Guoxiong},
-           giveni={G\bibinitperiod},
-           givenun=1}}%
-        {{un=0,uniquepart=base,hash=9c3f95b989273c77f0f08b20da1dddd8}{%
-           family={Kang},
-           familyi={K\bibinitperiod},
-           given={Yan},
-           giveni={Y\bibinitperiod},
-           givenun=0}}%
-        {{un=2,uniquepart=given,hash=eb7fbed3f8776de1b90974d3aca80614}{%
-           family={Li},
+    \entry{luo2024autoregressive}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=36af05e8d1d9c86c73bd9159a2aa01e3}{%
+           family={Luo},
            familyi={L\bibinitperiod},
-           given={Jianzhong},
-           giveni={J\bibinitperiod},
-           givenun=2}}%
+           given={Guanxiong},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=1,uniquepart=given,hash=e422b81bd8e9bc42653920f7afcd18ca}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Shoujin},
+           giveni={S\bibinitperiod},
+           givenun=1}}%
+      }
+      \strng{namehash}{809647f0e8ea06aa0626ff23b70abba6}
+      \strng{fullhash}{809647f0e8ea06aa0626ff23b70abba6}
+      \strng{bibnamehash}{809647f0e8ea06aa0626ff23b70abba6}
+      \strng{authorbibnamehash}{809647f0e8ea06aa0626ff23b70abba6}
+      \strng{authornamehash}{809647f0e8ea06aa0626ff23b70abba6}
+      \strng{authorfullhash}{809647f0e8ea06aa0626ff23b70abba6}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Neural Information Processing Systems (NeurIPS 2025)}
+      \field{title}{Self-diffusion for Solving Inverse Problems}
+      \field{year}{2025}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://openreview.net/pdf?id=5g9qls1V7Q
+      \endverb
+      \verb{url}
+      \verb https://openreview.net/pdf?id=5g9qls1V7Q
+      \endverb
+    \endentry
+    \entry{huang2024noise}{inproceedings}{}
+      \name{author}{9}{}{%
+        {{un=1,uniquepart=given,hash=e422b81bd8e9bc42653920f7afcd18ca}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Shoujin},
+           giveni={S\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=36af05e8d1d9c86c73bd9159a2aa01e3}{%
+           family={Luo},
+           familyi={L\bibinitperiod},
+           given={Guanxiong},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=1,uniquepart=given,hash=f2e5f45a009e71ca581b562c25df1b47}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Xi},
+           giveni={X\bibinitperiod},
+           givenun=1}}%
+        {{un=1,uniquepart=given,hash=14167118a0bb87ae8e38d71de5c28380}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Ziran},
+           giveni={Z\bibinitperiod},
+           givenun=1}}%
+        {{un=1,uniquepart=given,hash=8d5a1cb743d674b56459a74af300f838}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Yuwan},
+           giveni={Y\bibinitperiod},
+           givenun=1}}%
+        {{un=1,uniquepart=given,hash=e491ec4dec805d64ebd39b4d7431f591}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Huaishui},
+           giveni={H\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=0d34c36ec384cc59df4468cc1a3324b7}{%
+           family={Heng},
+           familyi={H\bibinitperiod},
+           given={Pheng-Ann},
+           giveni={P\bibinithyphendelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=1,uniquepart=given,hash=85e6dbb0aceb6d656b6c9ef0234156ad}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Lingyan},
+           giveni={L\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=d4bea75e01bbd4b14ee96a0ac32032b5}{%
+           family={Lyu},
+           familyi={L\bibinitperiod},
+           given={Mengye},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{84bbcd46ca6793e9fc87f5190c6c5296}
+      \strng{fullhash}{84bbcd46ca6793e9fc87f5190c6c5296}
+      \strng{bibnamehash}{84bbcd46ca6793e9fc87f5190c6c5296}
+      \strng{authorbibnamehash}{84bbcd46ca6793e9fc87f5190c6c5296}
+      \strng{authornamehash}{84bbcd46ca6793e9fc87f5190c6c5296}
+      \strng{authorfullhash}{84bbcd46ca6793e9fc87f5190c6c5296}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI 2024)}
+      \field{title}{Noise Level Adaptive Diffusion Model for Robust Reconstruction of Accelerated MRI}
+      \field{year}{2024}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.1007/978-3-031-72104-5_48
+      \endverb
+    \endentry
+    \entry{luo2024aid}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=36af05e8d1d9c86c73bd9159a2aa01e3}{%
+           family={Luo},
+           familyi={L\bibinitperiod},
+           given={Guanxiong},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=1,uniquepart=given,hash=e422b81bd8e9bc42653920f7afcd18ca}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Shoujin},
+           giveni={S\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=425a79a0aaea86af4966341d34fea2cc}{%
+           family={Uecker},
+           familyi={U\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a6a2d73e0fe66da98f81f52d00f5f05f}
+      \strng{fullhash}{a6a2d73e0fe66da98f81f52d00f5f05f}
+      \strng{bibnamehash}{a6a2d73e0fe66da98f81f52d00f5f05f}
+      \strng{authorbibnamehash}{a6a2d73e0fe66da98f81f52d00f5f05f}
+      \strng{authornamehash}{a6a2d73e0fe66da98f81f52d00f5f05f}
+      \strng{authorfullhash}{a6a2d73e0fe66da98f81f52d00f5f05f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Neural Information Processing Systems (NeurIPS 2024)}
+      \field{title}{Autoregressive Image Diffusion: Generating Image Sequence and Application in MRI}
+      \field{year}{2024}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://openreview.net/pdf?id=jIh4W7r0rn
+      \endverb
+      \verb{url}
+      \verb https://openreview.net/pdf?id=jIh4W7r0rn
+      \endverb
+    \endentry
+    \entry{huang2023accurate}{inproceedings}{}
+      \name{author}{9}{}{%
+        {{un=1,uniquepart=given,hash=e422b81bd8e9bc42653920f7afcd18ca}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Shoujin},
+           giveni={S\bibinitperiod},
+           givenun=1}}%
         {{un=2,uniquepart=given,hash=bff6a3005609a584433f086c631a758f}{%
            family={Li},
            familyi={L\bibinitperiod},
            given={Jingyu},
            giveni={J\bibinitperiod},
+           givenun=2}}%
+        {{un=0,uniquepart=base,hash=2cec8c3b65af52b83626048d6d9ca94c}{%
+           family={Mei},
+           familyi={M\bibinitperiod},
+           given={Lifeng},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=1,uniquepart=given,hash=d7b6d0401b160450bdc6e476317709ff}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Tan},
+           giveni={T\bibinitperiod},
+           givenun=1}}%
+        {{un=1,uniquepart=given,hash=14167118a0bb87ae8e38d71de5c28380}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Ziran},
+           giveni={Z\bibinitperiod},
+           givenun=1}}%
+        {{un=1,uniquepart=given,hash=776f36bf08e28873ee761ef612b8482f}{%
+           family={Dong},
+           familyi={D\bibinitperiod},
+           given={Yu},
+           giveni={Y\bibinitperiod},
+           givenun=1}}%
+        {{un=1,uniquepart=given,hash=85c643c4238ad669fae8ad91dd30984f}{%
+           family={Dong},
+           familyi={D\bibinitperiod},
+           given={Linzheng},
+           giveni={L\bibinitperiod},
+           givenun=1}}%
+        {{un=2,uniquepart=given,hash=eb96d2754cddae273dd482f087734e31}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Shaojun},
+           giveni={S\bibinitperiod},
            givenun=2}}%
         {{un=0,uniquepart=base,hash=d4bea75e01bbd4b14ee96a0ac32032b5}{%
            family={Lyu},
@@ -423,39 +900,111 @@
            giveni={M\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{494fd4e5fe1a784abfd4bb0208ec9cb0}
-      \strng{fullhash}{494fd4e5fe1a784abfd4bb0208ec9cb0}
-      \strng{bibnamehash}{494fd4e5fe1a784abfd4bb0208ec9cb0}
-      \strng{authorbibnamehash}{494fd4e5fe1a784abfd4bb0208ec9cb0}
-      \strng{authornamehash}{494fd4e5fe1a784abfd4bb0208ec9cb0}
-      \strng{authorfullhash}{494fd4e5fe1a784abfd4bb0208ec9cb0}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \list{organization}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{5e1426f239e84f8011294ef6e4ecfb4f}
+      \strng{fullhash}{5e1426f239e84f8011294ef6e4ecfb4f}
+      \strng{bibnamehash}{5e1426f239e84f8011294ef6e4ecfb4f}
+      \strng{authorbibnamehash}{5e1426f239e84f8011294ef6e4ecfb4f}
+      \strng{authornamehash}{5e1426f239e84f8011294ef6e4ecfb4f}
+      \strng{authorfullhash}{5e1426f239e84f8011294ef6e4ecfb4f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{\textbf{Scientific Reports (IF 4.9)}}
-      \field{number}{1}
-      \field{title}{Exploring Deep Learning Strategies for Intervertebral Disc Herniation Detection on Veterinary MRI}
-      \field{volume}{14}
-      \field{year}{2024}
+      \field{booktitle}{International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI 2023)}
+      \field{title}{Accurate Multi-contrast MRI Super-Resolution via a Dual Cross-Attention Transformer Network}
+      \field{year}{2023}
       \true{nocite}
-      \field{pages}{16705}
-      \range{pages}{1}
+      \field{pages}{313\bibrangedash 322}
+      \range{pages}{10}
       \verb{doi}
-      \verb 10.1038/s41598-024-67749-5
+      \verb 10.1007/978-3-031-43999-5_30
       \endverb
       \verb{urlraw}
-      \verb https://www.nature.com/articles/s41598-024-67749-5
+      \verb https://link.springer.com/chapter/10.1007/978-3-031-43999-5_30
       \endverb
       \verb{url}
-      \verb https://www.nature.com/articles/s41598-024-67749-5
+      \verb https://link.springer.com/chapter/10.1007/978-3-031-43999-5_30
+      \endverb
+    \endentry
+    \entry{huang2023whole}{incollection}{}
+      \name{author}{6}{}{%
+        {{un=1,uniquepart=given,hash=e422b81bd8e9bc42653920f7afcd18ca}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Shoujin},
+           giveni={S\bibinitperiod},
+           givenun=1}}%
+        {{un=1,uniquepart=given,hash=e491ec4dec805d64ebd39b4d7431f591}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Huaishui},
+           giveni={H\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=2cec8c3b65af52b83626048d6d9ca94c}{%
+           family={Mei},
+           familyi={M\bibinitperiod},
+           given={Lifeng},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=1,uniquepart=given,hash=d7b6d0401b160450bdc6e476317709ff}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Tan},
+           giveni={T\bibinitperiod},
+           givenun=1}}%
+        {{un=2,uniquepart=given,hash=eb96d2754cddae273dd482f087734e31}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Shaojun},
+           giveni={S\bibinitperiod},
+           givenun=2}}%
+        {{un=0,uniquepart=base,hash=d4bea75e01bbd4b14ee96a0ac32032b5}{%
+           family={Lyu},
+           familyi={L\bibinitperiod},
+           given={Mengye},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{3aad0c23b8d731d5e0276279eb50795e}
+      \strng{fullhash}{3aad0c23b8d731d5e0276279eb50795e}
+      \strng{bibnamehash}{3aad0c23b8d731d5e0276279eb50795e}
+      \strng{authorbibnamehash}{3aad0c23b8d731d5e0276279eb50795e}
+      \strng{authornamehash}{3aad0c23b8d731d5e0276279eb50795e}
+      \strng{authorfullhash}{3aad0c23b8d731d5e0276279eb50795e}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{MICCAI Challenge on Fast and Low-Resource Semi-supervised Abdominal Organ Segmentation (FLARE2023)}
+      \field{title}{From Whole-Body to Abdomen: Streamlined Segmentation of Organs and Tumors via Semi-Supervised Learning and Efficient Coarse-to-Fine Inference}
+      \field{year}{2024}
+      \true{nocite}
+      \field{pages}{283\bibrangedash 292}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1007/978-3-031-58776-4_22
+      \endverb
+      \verb{urlraw}
+      \verb https://link.springer.com/chapter/10.1007/978-3-031-58776-4_22
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/chapter/10.1007/978-3-031-58776-4_22
       \endverb
     \endentry
     \entry{shoujin2024ream}{inproceedings}{}
       \name{author}{12}{}{%
-        {{un=0,uniquepart=base,hash=483bfcdb1c0e2dcbd5c283ed40dccc9e}{%
-           family={\textbf{Shoujin\bibnamedelimb Huang}},
-           familyi={S\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{un=1,uniquepart=given,hash=e422b81bd8e9bc42653920f7afcd18ca}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Shoujin},
+           giveni={S\bibinitperiod},
+           givenun=1}}%
         {{un=2,uniquepart=given,hash=bff6a3005609a584433f086c631a758f}{%
            family={Li},
            familyi={L\bibinitperiod},
@@ -523,466 +1072,40 @@
            giveni={M\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{c39c796b4a9687adbf8ce987402b753f}
-      \strng{fullhash}{c39c796b4a9687adbf8ce987402b753f}
-      \strng{bibnamehash}{c39c796b4a9687adbf8ce987402b753f}
-      \strng{authorbibnamehash}{c39c796b4a9687adbf8ce987402b753f}
-      \strng{authornamehash}{c39c796b4a9687adbf8ce987402b753f}
-      \strng{authorfullhash}{c39c796b4a9687adbf8ce987402b753f}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \strng{namehash}{9882b78ebd1d26b43b85e124cdcef40f}
+      \strng{fullhash}{9882b78ebd1d26b43b85e124cdcef40f}
+      \strng{bibnamehash}{9882b78ebd1d26b43b85e124cdcef40f}
+      \strng{authorbibnamehash}{9882b78ebd1d26b43b85e124cdcef40f}
+      \strng{authornamehash}{9882b78ebd1d26b43b85e124cdcef40f}
+      \strng{authorfullhash}{9882b78ebd1d26b43b85e124cdcef40f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{\textbf{International Society for Magnetic Resonance in Medicine (ISMRM 2024)}}
+      \field{booktitle}{International Society for Magnetic Resonance in Medicine (ISMRM 2024)}
       \field{title}{Zero-shot EPI Nyquist ghost correction with diffusion-based generative models and magnitude consistency regularization}
       \field{year}{2024}
       \true{nocite}
       \field{pages}{0353}
       \range{pages}{1}
-    \endentry
-    \entry{huang2024noise}{inproceedings}{}
-      \name{author}{9}{}{%
-        {{un=0,uniquepart=base,hash=483bfcdb1c0e2dcbd5c283ed40dccc9e}{%
-           family={\textbf{Shoujin\bibnamedelimb Huang}},
-           familyi={S\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
-        {{un=0,uniquepart=base,hash=36af05e8d1d9c86c73bd9159a2aa01e3}{%
-           family={Luo},
-           familyi={L\bibinitperiod},
-           given={Guanxiong},
-           giveni={G\bibinitperiod},
-           givenun=0}}%
-        {{un=1,uniquepart=given,hash=f2e5f45a009e71ca581b562c25df1b47}{%
-           family={Wang},
-           familyi={W\bibinitperiod},
-           given={Xi},
-           giveni={X\bibinitperiod},
-           givenun=1}}%
-        {{un=1,uniquepart=given,hash=14167118a0bb87ae8e38d71de5c28380}{%
-           family={Chen},
-           familyi={C\bibinitperiod},
-           given={Ziran},
-           giveni={Z\bibinitperiod},
-           givenun=1}}%
-        {{un=1,uniquepart=given,hash=8d5a1cb743d674b56459a74af300f838}{%
-           family={Wang},
-           familyi={W\bibinitperiod},
-           given={Yuwan},
-           giveni={Y\bibinitperiod},
-           givenun=1}}%
-        {{un=1,uniquepart=given,hash=e491ec4dec805d64ebd39b4d7431f591}{%
-           family={Yang},
-           familyi={Y\bibinitperiod},
-           given={Huaishui},
-           giveni={H\bibinitperiod},
-           givenun=1}}%
-        {{un=0,uniquepart=base,hash=0d34c36ec384cc59df4468cc1a3324b7}{%
-           family={Heng},
-           familyi={H\bibinitperiod},
-           given={Pheng-Ann},
-           giveni={P\bibinithyphendelim A\bibinitperiod},
-           givenun=0}}%
-        {{un=1,uniquepart=given,hash=85e6dbb0aceb6d656b6c9ef0234156ad}{%
-           family={Zhang},
-           familyi={Z\bibinitperiod},
-           given={Lingyan},
-           giveni={L\bibinitperiod},
-           givenun=1}}%
-        {{un=0,uniquepart=base,hash=d4bea75e01bbd4b14ee96a0ac32032b5}{%
-           family={Lyu},
-           familyi={L\bibinitperiod},
-           given={Mengye},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{bcacd0af8bca2e56e971cd24d64de254}
-      \strng{fullhash}{bcacd0af8bca2e56e971cd24d64de254}
-      \strng{bibnamehash}{bcacd0af8bca2e56e971cd24d64de254}
-      \strng{authorbibnamehash}{bcacd0af8bca2e56e971cd24d64de254}
-      \strng{authornamehash}{bcacd0af8bca2e56e971cd24d64de254}
-      \strng{authorfullhash}{bcacd0af8bca2e56e971cd24d64de254}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{\textbf{International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI 2024)}}
-      \field{title}{Noise Level Adaptive Diffusion Model for Robust Reconstruction of Accelerated MRI}
-      \field{year}{2024}
-      \true{nocite}
-      \verb{urlraw}
-      \verb https://arxiv.org/pdf/2403.05245.pdf
-      \endverb
-      \verb{url}
-      \verb https://arxiv.org/pdf/2403.05245.pdf
-      \endverb
-    \endentry
-    \entry{huang2024robust}{article}{}
-      \name{author}{9}{}{%
-        {{un=0,uniquepart=base,hash=483bfcdb1c0e2dcbd5c283ed40dccc9e}{%
-           family={\textbf{Shoujin\bibnamedelimb Huang}},
-           familyi={S\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
-        {{un=0,uniquepart=base,hash=36af05e8d1d9c86c73bd9159a2aa01e3}{%
-           family={Luo},
-           familyi={L\bibinitperiod},
-           given={Guanxiong},
-           giveni={G\bibinitperiod},
-           givenun=0}}%
-        {{un=1,uniquepart=given,hash=8d5a1cb743d674b56459a74af300f838}{%
-           family={Wang},
-           familyi={W\bibinitperiod},
-           given={Yuwan},
-           giveni={Y\bibinitperiod},
-           givenun=1}}%
-        {{un=1,uniquepart=given,hash=ba3d24f674954bd8e944ef10e8f40ef4}{%
-           family={Yang},
-           familyi={Y\bibinitperiod},
-           given={Kexin},
-           giveni={K\bibinitperiod},
-           givenun=1}}%
-        {{un=1,uniquepart=given,hash=85e6dbb0aceb6d656b6c9ef0234156ad}{%
-           family={Zhang},
-           familyi={Z\bibinitperiod},
-           given={Lingyan},
-           giveni={L\bibinitperiod},
-           givenun=1}}%
-        {{un=1,uniquepart=given,hash=18f76466ede69d1e0496c258653e98ca}{%
-           family={Liu},
-           familyi={L\bibinitperiod},
-           given={Jingzhe},
-           giveni={J\bibinitperiod},
-           givenun=1}}%
-        {{un=0,uniquepart=base,hash=f4a76a837dd18ff55753e445c8ce241d}{%
-           family={Guo},
-           familyi={G\bibinitperiod},
-           given={Hua},
-           giveni={H\bibinitperiod},
-           givenun=0}}%
-        {{un=1,uniquepart=given,hash=96fb575ca3e501d621aacb8925f7030e}{%
-           family={Wang},
-           familyi={W\bibinitperiod},
-           given={Min},
-           giveni={M\bibinitperiod},
-           givenun=1}}%
-        {{un=0,uniquepart=base,hash=d4bea75e01bbd4b14ee96a0ac32032b5}{%
-           family={Lyu},
-           familyi={L\bibinitperiod},
-           given={Mengye},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{62e61f779ffe6b87ac24fe48455df430}
-      \strng{fullhash}{62e61f779ffe6b87ac24fe48455df430}
-      \strng{bibnamehash}{62e61f779ffe6b87ac24fe48455df430}
-      \strng{authorbibnamehash}{62e61f779ffe6b87ac24fe48455df430}
-      \strng{authornamehash}{62e61f779ffe6b87ac24fe48455df430}
-      \strng{authorfullhash}{62e61f779ffe6b87ac24fe48455df430}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{\textbf{Medical Image Analysis(IF 10.9) (Accepted)}}
-      \field{title}{Robust Simultaneous Multislice MRI Reconstruction Using Deep Generative Priors}
-      \field{year}{2024}
-      \true{nocite}
-      \verb{urlraw}
-      \verb https://arxiv.org/pdf/2407.21600.pdf
-      \endverb
-      \verb{url}
-      \verb https://arxiv.org/pdf/2407.21600.pdf
-      \endverb
-    \endentry
-    \entry{huang2023whole}{incollection}{}
-      \name{author}{6}{}{%
-        {{un=0,uniquepart=base,hash=483bfcdb1c0e2dcbd5c283ed40dccc9e}{%
-           family={\textbf{Shoujin\bibnamedelimb Huang}},
-           familyi={S\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
-        {{un=1,uniquepart=given,hash=e491ec4dec805d64ebd39b4d7431f591}{%
-           family={Yang},
-           familyi={Y\bibinitperiod},
-           given={Huaishui},
-           giveni={H\bibinitperiod},
-           givenun=1}}%
-        {{un=0,uniquepart=base,hash=2cec8c3b65af52b83626048d6d9ca94c}{%
-           family={Mei},
-           familyi={M\bibinitperiod},
-           given={Lifeng},
-           giveni={L\bibinitperiod},
-           givenun=0}}%
-        {{un=1,uniquepart=given,hash=d7b6d0401b160450bdc6e476317709ff}{%
-           family={Zhang},
-           familyi={Z\bibinitperiod},
-           given={Tan},
-           giveni={T\bibinitperiod},
-           givenun=1}}%
-        {{un=2,uniquepart=given,hash=eb96d2754cddae273dd482f087734e31}{%
-           family={Liu},
-           familyi={L\bibinitperiod},
-           given={Shaojun},
-           giveni={S\bibinitperiod},
-           givenun=2}}%
-        {{un=0,uniquepart=base,hash=d4bea75e01bbd4b14ee96a0ac32032b5}{%
-           family={Lyu},
-           familyi={L\bibinitperiod},
-           given={Mengye},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {Springer}%
-      }
-      \strng{namehash}{6f2cdd9f8ce4613d1ca787df25e3af6d}
-      \strng{fullhash}{6f2cdd9f8ce4613d1ca787df25e3af6d}
-      \strng{bibnamehash}{6f2cdd9f8ce4613d1ca787df25e3af6d}
-      \strng{authorbibnamehash}{6f2cdd9f8ce4613d1ca787df25e3af6d}
-      \strng{authornamehash}{6f2cdd9f8ce4613d1ca787df25e3af6d}
-      \strng{authorfullhash}{6f2cdd9f8ce4613d1ca787df25e3af6d}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{MICCAI Challenge on Fast and Low-Resource Semi-supervised Abdominal Organ Segmentation (FLARE2023)}
-      \field{title}{From Whole-Body to Abdomen: Streamlined Segmentation of Organs and Tumors via Semi-Supervised Learning and Efficient Coarse-to-Fine Inference}
-      \field{year}{2024}
-      \true{nocite}
-      \field{pages}{283\bibrangedash 292}
-      \range{pages}{10}
       \verb{doi}
-      \verb 10.1007/978-3-031-58776-4_22
+      \verb 10.58530/2024/0353
       \endverb
       \verb{urlraw}
-      \verb https://link.springer.com/chapter/10.1007/978-3-031-58776-4_22
+      \verb https://doi.org/10.58530/2024/0353
       \endverb
       \verb{url}
-      \verb https://link.springer.com/chapter/10.1007/978-3-031-58776-4_22
+      \verb https://doi.org/10.58530/2024/0353
       \endverb
-    \endentry
-    \entry{lyu_m4raw_2023}{article}{}
-      \name{author}{10}{}{%
-        {{un=0,uniquepart=base,hash=d64e95eee873d3c523abd06827bc55fd}{%
-           family={{Mengye Lyu}},
-           familyi={M\bibinitperiod}}}%
-        {{un=0,uniquepart=base,hash=2cec8c3b65af52b83626048d6d9ca94c}{%
-           family={Mei},
-           familyi={M\bibinitperiod},
-           given={Lifeng},
-           giveni={L\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=483bfcdb1c0e2dcbd5c283ed40dccc9e}{%
-           family={\textbf{Shoujin\bibnamedelimb Huang}},
-           familyi={S\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
-        {{un=2,uniquepart=given,hash=22df6c53f9566e085e6324cedfd89a91}{%
-           family={Liu},
-           familyi={L\bibinitperiod},
-           given={Sixing},
-           giveni={S\bibinitperiod},
-           givenun=2}}%
-        {{un=1,uniquepart=given,hash=cf1f0547c288eff0857572dcc12516bb}{%
-           family={Li},
-           familyi={L\bibinitperiod},
-           given={Yi},
-           giveni={Y\bibinitperiod},
-           givenun=1}}%
-        {{un=1,uniquepart=given,hash=ba3d24f674954bd8e944ef10e8f40ef4}{%
-           family={Yang},
-           familyi={Y\bibinitperiod},
-           given={Kexin},
-           giveni={K\bibinitperiod},
-           givenun=1}}%
-        {{un=1,uniquepart=given,hash=6a023c15afe9e673b667a53c08892c42}{%
-           family={Liu},
-           familyi={L\bibinitperiod},
-           given={Yilong},
-           giveni={Y\bibinitperiod},
-           givenun=1}}%
-        {{un=1,uniquepart=given,hash=776f36bf08e28873ee761ef612b8482f}{%
-           family={Dong},
-           familyi={D\bibinitperiod},
-           given={Yu},
-           giveni={Y\bibinitperiod},
-           givenun=1}}%
-        {{un=1,uniquepart=given,hash=85c643c4238ad669fae8ad91dd30984f}{%
-           family={Dong},
-           familyi={D\bibinitperiod},
-           given={Linzheng},
-           giveni={L\bibinitperiod},
-           givenun=1}}%
-        {{un=2,uniquepart=given,hash=c3060919774850852af8a544e14e69a7}{%
-           family={Wu},
-           familyi={W\bibinitperiod},
-           given={Ed\bibnamedelima X.},
-           giveni={E\bibinitperiod\bibinitdelim X\bibinitperiod},
-           givenun=2}}%
-      }
-      \strng{namehash}{4b547e2faac9c2117eb864388f60c2f1}
-      \strng{fullhash}{4b547e2faac9c2117eb864388f60c2f1}
-      \strng{bibnamehash}{4b547e2faac9c2117eb864388f60c2f1}
-      \strng{authorbibnamehash}{4b547e2faac9c2117eb864388f60c2f1}
-      \strng{authornamehash}{4b547e2faac9c2117eb864388f60c2f1}
-      \strng{authorfullhash}{4b547e2faac9c2117eb864388f60c2f1}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{2052-4463}
-      \field{journaltitle}{\textbf{Scientific Data (IF 10.8)}}
-      \field{month}{5}
-      \field{number}{1}
-      \field{title}{{M4Raw}: {A} multi-contrast, multi-repetition, multi-channel {MRI} k-space dataset for low-field {MRI} research}
-      \field{volume}{10}
-      \field{year}{2023}
-      \true{nocite}
-      \field{pages}{264}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1038/s41597-023-02181-4
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1038/s41597-023-02181-4
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1038/s41597-023-02181-4
-      \endverb
-    \endentry
-    \entry{huang2023accurate}{inproceedings}{}
-      \name{author}{9}{}{%
-        {{un=0,uniquepart=base,hash=483bfcdb1c0e2dcbd5c283ed40dccc9e}{%
-           family={\textbf{Shoujin\bibnamedelimb Huang}},
-           familyi={S\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
-        {{un=2,uniquepart=given,hash=bff6a3005609a584433f086c631a758f}{%
-           family={Li},
-           familyi={L\bibinitperiod},
-           given={Jingyu},
-           giveni={J\bibinitperiod},
-           givenun=2}}%
-        {{un=0,uniquepart=base,hash=2cec8c3b65af52b83626048d6d9ca94c}{%
-           family={Mei},
-           familyi={M\bibinitperiod},
-           given={Lifeng},
-           giveni={L\bibinitperiod},
-           givenun=0}}%
-        {{un=1,uniquepart=given,hash=d7b6d0401b160450bdc6e476317709ff}{%
-           family={Zhang},
-           familyi={Z\bibinitperiod},
-           given={Tan},
-           giveni={T\bibinitperiod},
-           givenun=1}}%
-        {{un=1,uniquepart=given,hash=14167118a0bb87ae8e38d71de5c28380}{%
-           family={Chen},
-           familyi={C\bibinitperiod},
-           given={Ziran},
-           giveni={Z\bibinitperiod},
-           givenun=1}}%
-        {{un=1,uniquepart=given,hash=776f36bf08e28873ee761ef612b8482f}{%
-           family={Dong},
-           familyi={D\bibinitperiod},
-           given={Yu},
-           giveni={Y\bibinitperiod},
-           givenun=1}}%
-        {{un=1,uniquepart=given,hash=85c643c4238ad669fae8ad91dd30984f}{%
-           family={Dong},
-           familyi={D\bibinitperiod},
-           given={Linzheng},
-           giveni={L\bibinitperiod},
-           givenun=1}}%
-        {{un=2,uniquepart=given,hash=eb96d2754cddae273dd482f087734e31}{%
-           family={Liu},
-           familyi={L\bibinitperiod},
-           given={Shaojun},
-           giveni={S\bibinitperiod},
-           givenun=2}}%
-        {{un=0,uniquepart=base,hash=d4bea75e01bbd4b14ee96a0ac32032b5}{%
-           family={Lyu},
-           familyi={L\bibinitperiod},
-           given={Mengye},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{organization}{1}{%
-        {Springer}%
-      }
-      \strng{namehash}{9ed816e3dcd5f8be2bf47a74486aba87}
-      \strng{fullhash}{9ed816e3dcd5f8be2bf47a74486aba87}
-      \strng{bibnamehash}{9ed816e3dcd5f8be2bf47a74486aba87}
-      \strng{authorbibnamehash}{9ed816e3dcd5f8be2bf47a74486aba87}
-      \strng{authornamehash}{9ed816e3dcd5f8be2bf47a74486aba87}
-      \strng{authorfullhash}{9ed816e3dcd5f8be2bf47a74486aba87}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{\textbf{International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI 2023)}}
-      \field{title}{Accurate Multi-contrast MRI Super-Resolution via a Dual Cross-Attention Transformer Network}
-      \field{year}{2023}
-      \true{nocite}
-      \field{pages}{313\bibrangedash 322}
-      \range{pages}{10}
-      \verb{doi}
-      \verb 10.1007/978-3-031-43999-5_30
-      \endverb
-      \verb{urlraw}
-      \verb https://link.springer.com/chapter/10.1007/978-3-031-43999-5_30
-      \endverb
-      \verb{url}
-      \verb https://link.springer.com/chapter/10.1007/978-3-031-43999-5_30
-      \endverb
-    \endentry
-    \entry{shoujin2023CSTD}{inproceedings}{}
-      \name{author}{6}{}{%
-        {{un=0,uniquepart=base,hash=483bfcdb1c0e2dcbd5c283ed40dccc9e}{%
-           family={\textbf{Shoujin\bibnamedelimb Huang}},
-           familyi={S\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
-        {{un=2,uniquepart=given,hash=22df6c53f9566e085e6324cedfd89a91}{%
-           family={Liu},
-           familyi={L\bibinitperiod},
-           given={Sixing},
-           giveni={S\bibinitperiod},
-           givenun=2}}%
-        {{un=0,uniquepart=base,hash=2cec8c3b65af52b83626048d6d9ca94c}{%
-           family={Mei},
-           familyi={M\bibinitperiod},
-           given={Lifeng},
-           giveni={L\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=897e052127deaab693432833076c7316}{%
-           family={Tang},
-           familyi={T\bibinitperiod},
-           given={Chenhui},
-           giveni={C\bibinitperiod},
-           givenun=0}}%
-        {{un=2,uniquepart=given,hash=c3060919774850852af8a544e14e69a7}{%
-           family={Wu},
-           familyi={W\bibinitperiod},
-           given={Ed\bibnamedelima X},
-           giveni={E\bibinitperiod\bibinitdelim X\bibinitperiod},
-           givenun=2}}%
-        {{un=0,uniquepart=base,hash=d4bea75e01bbd4b14ee96a0ac32032b5}{%
-           family={Lyu},
-           familyi={L\bibinitperiod},
-           given={Mengye},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{431a2d85db0c71224fec1e5e50e45be5}
-      \strng{fullhash}{431a2d85db0c71224fec1e5e50e45be5}
-      \strng{bibnamehash}{431a2d85db0c71224fec1e5e50e45be5}
-      \strng{authorbibnamehash}{431a2d85db0c71224fec1e5e50e45be5}
-      \strng{authornamehash}{431a2d85db0c71224fec1e5e50e45be5}
-      \strng{authorfullhash}{431a2d85db0c71224fec1e5e50e45be5}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{\textbf{International Society for Magnetic Resonance in Medicine (ISMRM 2023)}}
-      \field{title}{A Novel Cross-Subject Transformer Denoising Method}
-      \field{year}{2023}
-      \true{nocite}
-      \field{pages}{77}
-      \range{pages}{1}
     \endentry
     \entry{huang2023abdominal}{incollection}{}
       \name{author}{9}{}{%
-        {{un=0,uniquepart=base,hash=483bfcdb1c0e2dcbd5c283ed40dccc9e}{%
-           family={\textbf{Shoujin\bibnamedelimb Huang}},
-           familyi={S\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{un=1,uniquepart=given,hash=e422b81bd8e9bc42653920f7afcd18ca}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Shoujin},
+           giveni={S\bibinitperiod},
+           givenun=1}}%
         {{un=0,uniquepart=base,hash=2cec8c3b65af52b83626048d6d9ca94c}{%
            family={Mei},
            familyi={M\bibinitperiod},
@@ -1035,14 +1158,14 @@
       \list{publisher}{1}{%
         {Springer}%
       }
-      \strng{namehash}{bc4c1690fd1fbe6c9210c29c309ae6fd}
-      \strng{fullhash}{bc4c1690fd1fbe6c9210c29c309ae6fd}
-      \strng{bibnamehash}{bc4c1690fd1fbe6c9210c29c309ae6fd}
-      \strng{authorbibnamehash}{bc4c1690fd1fbe6c9210c29c309ae6fd}
-      \strng{authornamehash}{bc4c1690fd1fbe6c9210c29c309ae6fd}
-      \strng{authorfullhash}{bc4c1690fd1fbe6c9210c29c309ae6fd}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \strng{namehash}{31f813b3fb2cead1444d80157e2c2dcb}
+      \strng{fullhash}{31f813b3fb2cead1444d80157e2c2dcb}
+      \strng{bibnamehash}{31f813b3fb2cead1444d80157e2c2dcb}
+      \strng{authorbibnamehash}{31f813b3fb2cead1444d80157e2c2dcb}
+      \strng{authornamehash}{31f813b3fb2cead1444d80157e2c2dcb}
+      \strng{authorfullhash}{31f813b3fb2cead1444d80157e2c2dcb}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{MICCAI Challenge on Fast and Low-Resource Semi-supervised Abdominal Organ Segmentation (FLARE2022)}
@@ -1061,50 +1184,38 @@
       \verb https://link.springer.com/chapter/10.1007/978-3-031-23911-3_3
       \endverb
     \endentry
-    \entry{guoxiong2022ismrm}{inproceedings}{}
-      \name{author}{9}{}{%
-        {{un=0,uniquepart=base,hash=422f98cb0de5db0a5e104d64f011ba8a}{%
-           family={{Guoxiong Deng}},
-           familyi={G\bibinitperiod}}}%
-        {{un=0,uniquepart=base,hash=483bfcdb1c0e2dcbd5c283ed40dccc9e}{%
-           family={\textbf{Shoujin\bibnamedelimb Huang}},
-           familyi={S\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
-        {{un=1,uniquepart=given,hash=14167118a0bb87ae8e38d71de5c28380}{%
-           family={Chen},
-           familyi={C\bibinitperiod},
-           given={Ziran},
-           giveni={Z\bibinitperiod},
+    \entry{shoujin2023CSTD}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{un=1,uniquepart=given,hash=e422b81bd8e9bc42653920f7afcd18ca}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Shoujin},
+           giveni={S\bibinitperiod},
            givenun=1}}%
-        {{un=0,uniquepart=base,hash=6c0f520008d103db0c6b323be1b9ad51}{%
-           family={Lifeng\bibnamedelima Mei},
-           familyi={L\bibinitperiod\bibinitdelim M\bibinitperiod},
-           given={Jianzhong\bibnamedelima Li},
-           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+        {{un=2,uniquepart=given,hash=22df6c53f9566e085e6324cedfd89a91}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Sixing},
+           giveni={S\bibinitperiod},
+           givenun=2}}%
+        {{un=0,uniquepart=base,hash=2cec8c3b65af52b83626048d6d9ca94c}{%
+           family={Mei},
+           familyi={M\bibinitperiod},
+           given={Lifeng},
+           giveni={L\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=c4a54254aa9b7fa1ece7fae380a729eb}{%
-           family={Jiang},
-           familyi={J\bibinitperiod},
-           given={Ruixiang},
-           giveni={R\bibinitperiod},
+        {{un=0,uniquepart=base,hash=897e052127deaab693432833076c7316}{%
+           family={Tang},
+           familyi={T\bibinitperiod},
+           given={Chenhui},
+           giveni={C\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=51e68df0a30c33e23f8ee7b19c52b50f}{%
-           family={Xiao},
-           familyi={X\bibinitperiod},
-           given={WenYue},
-           giveni={W\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=2c5a5a887c91f5b58eff969da32e33d3}{%
-           family={Wei},
+        {{un=2,uniquepart=given,hash=c3060919774850852af8a544e14e69a7}{%
+           family={Wu},
            familyi={W\bibinitperiod},
-           given={Dexing},
-           giveni={D\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=9c3f95b989273c77f0f08b20da1dddd8}{%
-           family={Kang},
-           familyi={K\bibinitperiod},
-           given={Yan},
-           giveni={Y\bibinitperiod},
-           givenun=0}}%
+           given={Ed\bibnamedelima X},
+           giveni={E\bibinitperiod\bibinitdelim X\bibinitperiod},
+           givenun=2}}%
         {{un=0,uniquepart=base,hash=d4bea75e01bbd4b14ee96a0ac32032b5}{%
            family={Lyu},
            familyi={L\bibinitperiod},
@@ -1112,102 +1223,30 @@
            giveni={M\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{e0d20400c678614c935de12e7ebc951a}
-      \strng{fullhash}{e0d20400c678614c935de12e7ebc951a}
-      \strng{bibnamehash}{e0d20400c678614c935de12e7ebc951a}
-      \strng{authorbibnamehash}{e0d20400c678614c935de12e7ebc951a}
-      \strng{authornamehash}{e0d20400c678614c935de12e7ebc951a}
-      \strng{authorfullhash}{e0d20400c678614c935de12e7ebc951a}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \strng{namehash}{ea222eb964d9a22b90eb1a3673add6ac}
+      \strng{fullhash}{ea222eb964d9a22b90eb1a3673add6ac}
+      \strng{bibnamehash}{ea222eb964d9a22b90eb1a3673add6ac}
+      \strng{authorbibnamehash}{ea222eb964d9a22b90eb1a3673add6ac}
+      \strng{authornamehash}{ea222eb964d9a22b90eb1a3673add6ac}
+      \strng{authorfullhash}{ea222eb964d9a22b90eb1a3673add6ac}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{\textbf{International Society for Magnetic Resonance in Medicine (ISMRM 2022)}}
-      \field{title}{Deep Learning for Veterinary MRI: Automated Detection of Intervertebral Disc Herniation in Pet Dogs}
-      \field{year}{2022}
+      \field{booktitle}{International Society for Magnetic Resonance in Medicine (ISMRM 2023)}
+      \field{title}{A Novel Cross-Subject Transformer Denoising Method}
+      \field{year}{2023}
       \true{nocite}
-      \field{pages}{3104}
-      \range{pages}{1}
-    \endentry
-    \entry{hassan2022review}{article}{}
-      \name{author}{9}{}{%
-        {{un=0,uniquepart=base,hash=a0aed2dadfa1682284643afb0cb9f595}{%
-           family={{Haseeb Hassan}},
-           familyi={H\bibinitperiod}}}%
-        {{un=0,uniquepart=base,hash=3681c8a717fc8e840a8b4a90638b19b8}{%
-           family={Ren},
-           familyi={R\bibinitperiod},
-           given={Zhaoyu},
-           giveni={Z\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=e2ea2a7522c5b4e9de6cc2ad15d1391f}{%
-           family={Zhao},
-           familyi={Z\bibinitperiod},
-           given={Huishi},
-           giveni={H\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=483bfcdb1c0e2dcbd5c283ed40dccc9e}{%
-           family={\textbf{Shoujin\bibnamedelimb Huang}},
-           familyi={S\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
-        {{un=1,uniquepart=given,hash=fc63986540b002fd74244549ce74082f}{%
-           family={Li},
-           familyi={L\bibinitperiod},
-           given={Dan},
-           giveni={D\bibinitperiod},
-           givenun=1}}%
-        {{un=0,uniquepart=base,hash=9061250b34a7ce622f905b0ed98b6fae}{%
-           family={Xiang},
-           familyi={X\bibinitperiod},
-           given={Shaohua},
-           giveni={S\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=9c3f95b989273c77f0f08b20da1dddd8}{%
-           family={Kang},
-           familyi={K\bibinitperiod},
-           given={Yan},
-           giveni={Y\bibinitperiod},
-           givenun=0}}%
-        {{un=1,uniquepart=given,hash=359136c550ecf4386c4aed04de264171}{%
-           family={Chen},
-           familyi={C\bibinitperiod},
-           given={Sifan},
-           giveni={S\bibinitperiod},
-           givenun=1}}%
-        {{un=1,uniquepart=given,hash=de2800dbc4cd88500044b1d3bcc9fa25}{%
-           family={Huang},
-           familyi={H\bibinitperiod},
-           given={Bingding},
-           giveni={B\bibinitperiod},
-           givenun=1}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{namehash}{2bb230b9c5caa08a73f781034e7612a2}
-      \strng{fullhash}{2bb230b9c5caa08a73f781034e7612a2}
-      \strng{bibnamehash}{2bb230b9c5caa08a73f781034e7612a2}
-      \strng{authorbibnamehash}{2bb230b9c5caa08a73f781034e7612a2}
-      \strng{authornamehash}{2bb230b9c5caa08a73f781034e7612a2}
-      \strng{authorfullhash}{2bb230b9c5caa08a73f781034e7612a2}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{\textbf{Computers in Biology and Medicine (IF 6.9)}}
-      \field{title}{Review and classification of AI-enabled COVID-19 CT imaging models based on computer vision tasks}
-      \field{volume}{141}
-      \field{year}{2022}
-      \true{nocite}
-      \field{pages}{105123}
+      \field{pages}{77}
       \range{pages}{1}
       \verb{doi}
-      \verb 10.1016/j.compbiomed.2021.105123
+      \verb 10.58530/2023/0077
       \endverb
       \verb{urlraw}
-      \verb https://www.sciencedirect.com/science/article/pii/S0010482521009173
+      \verb https://doi.org/10.58530/2023/0077
       \endverb
       \verb{url}
-      \verb https://www.sciencedirect.com/science/article/pii/S0010482521009173
+      \verb https://doi.org/10.58530/2023/0077
       \endverb
     \endentry
   \enddatalist

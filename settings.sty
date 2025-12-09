@@ -44,6 +44,8 @@
 % If you're not a researcher nor an academic, you probably don't need biblatex; delete this line.
 \RequirePackage{biblatex}
 \RequirePackage{csquotes}
+\DeclareNameAlias{author}{given-family}
+\RequirePackage{needspace}
 
 \RequirePackage{tikz}
 \newcommand*\circled[1]{\tikz[baseline=(char.base)]{
@@ -51,6 +53,7 @@
    
 \newcounter{bibitem}
 \AtBeginBibliography{\setcounter{bibitem}{1}}
+\AtEveryBibitem{\Needspace{8\baselineskip}}
 \iffieldformatundef{labelnumberwidth}{%
   % if author-year style
   \AtEveryBibitem{\makebox[2.5em][l]{\circled{\thebibitem}\stepcounter{bibitem}}}%
@@ -143,4 +146,37 @@
 
 
 \RequirePackage[colorlinks=true,allcolors=black,breaklinks=true]{hyperref}
+\RequirePackage{xstring}
+\DeclareFieldFormat{title}{\StrSubstitute{#1}{“}{}[\temp]\StrSubstitute{\temp}{”}{}[\temp]\StrSubstitute{\temp}{:}{}[\temp]\StrSubstitute{\temp}{"}{}[\temp]\temp}
+\renewrobustcmd*{\mkbibquote}[1]{#1}
+\DeclareFieldFormat{booktitleparen}{\StrBefore{#1}{(}[\btprefix]\StrBetween{#1}{(}{)}[\btparen]\ifstrempty{\btparen}{#1}{\btprefix{\bfseries(\btparen)}}}
+\DeclareFieldFormat[article]{title}{#1}
+\DeclareFieldFormat[inproceedings]{title}{#1}
+\DeclareFieldFormat[incollection]{title}{#1}
 
+\DeclareBibliographyDriver{article}{%
+  \usebibmacro{bibindex}%
+  \usebibmacro{begentry}%
+  {\bfseries\printfield{title}}\par
+  {\bfseries\printfield{journaltitle}}
+  \space\iffieldundef{doi}{\printfield{url}}{\printfield{doi}} \par
+  \printnames{author}
+}
+
+\DeclareBibliographyDriver{inproceedings}{%
+  \usebibmacro{bibindex}%
+  \usebibmacro{begentry}%
+  {\bfseries\printfield{title}}\par
+  \printfield[booktitleparen]{booktitle}
+  \iffieldundef{doi}{\printfield{url}}{\printfield{doi}}\par
+  \printnames{author}
+}
+
+\DeclareBibliographyDriver{incollection}{%
+  \usebibmacro{bibindex}%
+  \usebibmacro{begentry}%
+   {\bfseries\printfield{title}}\par
+  \printfield[booktitleparen]{booktitle}
+  \iffieldundef{doi}{\printfield{url}}{\printfield{doi}}\par
+  \printnames{author}
+}
